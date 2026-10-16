@@ -1,0 +1,6 @@
+name: agentic_proteomics
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+prefix: /home/laura/miniconda3/envs/agentic_proteomics
