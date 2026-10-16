@@ -1,23 +1,12 @@
 import duckdb
 
-BASE_URL = (
-    "https://browse.quantms.org/quantms/datasets/"
-    "PXD011896/a516cc54b8d0"
-)
-
-FILES = [
-    "openms.dataset.parquet",
-    "openms.sample.parquet",
-    "openms.run.parquet",
-]
-
 def truncate(value, max_length=25):
     value = str(value)
     if len(value) > max_length:
         return value[:max_length - 3] + "..."
     return value
 
-def profile_metadata():
+def profile_metadata(name, base_url, files):
 
     con = duckdb.connect()
 
@@ -25,8 +14,8 @@ def profile_metadata():
         con.execute("INSTALL httpfs")
         con.execute("LOAD httpfs")
 
-        for filename in FILES:
-            url = f"{BASE_URL}/{filename}"
+        for filename in files:
+            url = f"{base_url.rstrip('/')}/{filename}"
 
             print(f"\n{'=' * 60}")
             print(f"File: {filename}")
@@ -34,20 +23,44 @@ def profile_metadata():
 
             try:
 
-                # Schema
+                # schema
                 schema = con.execute(
                     "DESCRIBE SELECT * FROM read_parquet(?)",
                     [url],
                 ).fetchdf()
-                schema["column_type"] = schema["column_type"].apply(truncate)
+                schema = schema.drop(
+                    columns=["column_type", "null", "key", "default", "extra"],
+                    errors="ignore",
+                )
 
-                # First five rows
+                # first five rows as preview
                 preview = con.execute(
                     "SELECT * FROM read_parquet(?) LIMIT 5",
                     [url],
                 ).fetchdf()
 
-                # Combine schema and preview
+                # unique values per column
+                unique_counts = {}
+
+                for column in schema["column_name"]:
+                    query = f"""
+                        SELECT COUNT(DISTINCT "{column}")
+                        FROM read_parquet(?)
+                    """
+                    try:
+                        unique_counts[column] = con.execute(
+                            query, [url]
+                        ).fetchone()[0]
+                    except Exception:
+                        unique_counts[column] = None
+
+                schema.insert(
+                    1,
+                    "unique_values",
+                    schema["column_name"].map(unique_counts),
+                )
+
+                # combine schema and preview
                 for i in range(len(preview)):
                     schema[f"row_{i + 1}"] = [
                         truncate(value) for value in preview.iloc[i].tolist()
@@ -61,6 +74,3 @@ def profile_metadata():
 
     finally:
         con.close()
-
-if __name__ == "__main__":
-    profile_metadata()
