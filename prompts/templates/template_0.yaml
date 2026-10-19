@@ -1,11 +1,14 @@
-Role:
+prompt_id:
+version:
 
-Objective:
+role:
 
-Tasks:
+objective:
+
+tasks:
   - ...
 
-Constrains:
+constrains:
   - ...
 
-Output:
+output:
