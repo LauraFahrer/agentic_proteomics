@@ -1,0 +1,42 @@
+datasets:
+- name: MSV000085836
+  base_url: "https://browse.quantms.org/quantms/datasets/MSV000085836/8e4c044b513d"
+  files:
+  - openms.dataset.parquet
+  - openms.sample.parquet
+  - openms.run.parquet
+
+- name: PXD023662
+  base_url: "https://browse.quantms.org/quantms/datasets/PXD023662/4bd01d820826"
+  files:
+  - openms.dataset.parquet
+  - openms.sample.parquet
+  - openms.run.parquet
+
+- name: PXD042233
+  base_url: "https://browse.quantms.org/quantms/datasets/PXD042233/9d3045d63b19"
+  files:
+  - PXD042233.dataset.parquet
+  - PXD042233.sample.parquet
+  - PXD042233.run.parquet
+
+- name: PXD011896
+  base_url: "https://browse.quantms.org/quantms/datasets/PXD011896/a516cc54b8d0"
+  files:
+  - openms.dataset.parquet
+  - openms.sample.parquet
+  - openms.run.parquet
+
+- name: PXD017199
+  base_url: "https://browse.quantms.org/quantms/datasets/PXD017199/c29f87a1e559"
+  files:
+  - PXD017199.dataset.parquet
+  - PXD017199.sample.parquet
+  - PXD017199.run.parquet
+
+- name: PXD030304
+  base_url: "https://browse.quantms.org/quantms/datasets/PXD030304/fb6d543960a7"
+  files:
+  - PXD030304.dataset.parquet
+  - PXD030304.sample.parquet
+  - PXD030304.run.parquet
