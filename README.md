@@ -31,9 +31,10 @@ Usage: Run the script from the project root directory:
     python src/run.py --promt-id <PROMPT_ID> --dataset-id <DATASET_ID>
 
 Parameters:
-    --prompt-id: Identifier of the prompt configuration. The corresponding YAML file must exist in prompts/ and follow the naming convention <PROMPT_ID>.yaml.
 
-    --dataset-id: Identifier of the dataset defined in data/test_data/datasets.yaml. The dataset configuration must include a URL.
+- `--prompt-id`: Identifier of the prompt configuration. The corresponding YAML file must exist in prompts/ and follow the naming convention <PROMPT_ID>.yaml.
+
+- `--dataset-id`: Identifier of the dataset defined in data/test_data/datasets.yaml. The dataset configuration must include a URL.
 
 Output: Each execution creates a unique run directory under runs/<PROMPT_ID>/.
     runs/
