@@ -1,42 +1,49 @@
 datasets:
-- name: MSV000085836
-  base_url: "https://browse.quantms.org/quantms/datasets/MSV000085836/8e4c044b513d"
+- name: PXD071155
+  base_url: "https://browse.quantms.org/quantms/datasets/PXD071155/a1520a92f6e9"
   files:
-  - openms.dataset.parquet
-  - openms.sample.parquet
-  - openms.run.parquet
+  - PXD071155.dataset.parquet
+  - PXD071155.sample.parquet
+  - PXD071155.run.parquet
 
-- name: PXD023662
-  base_url: "https://browse.quantms.org/quantms/datasets/PXD023662/4bd01d820826"
+- name: PXD002395
+  base_url: "https://browse.quantms.org/quantms/datasets/PXD002395/8393835554c6"
   files:
-  - openms.dataset.parquet
-  - openms.sample.parquet
-  - openms.run.parquet
+  - PXD002395.dataset.parquet
+  - PXD002395.sample.parquet
+  - PXD002395.run.parquet
 
-- name: PXD042233
-  base_url: "https://browse.quantms.org/quantms/datasets/PXD042233/9d3045d63b19"
+- name: PXD052856
+  base_url: "https://browse.quantms.org/quantms/datasets/PXD052856/1fefbb7618e7"
   files:
-  - PXD042233.dataset.parquet
-  - PXD042233.sample.parquet
-  - PXD042233.run.parquet
+  - PXD052856.dataset.parquet
+  - PXD052856.sample.parquet
+  - PXD052856.run.parquet
 
-- name: PXD011896
-  base_url: "https://browse.quantms.org/quantms/datasets/PXD011896/a516cc54b8d0"
+- name: PXD070780
+  base_url: "https://browse.quantms.org/quantms/datasets/PXD070780/20445ebcb175"
   files:
-  - openms.dataset.parquet
-  - openms.sample.parquet
-  - openms.run.parquet
+  - PXD070780.dataset.parquet
+  - PXD070780.sample.parquet
+  - PXD070780.run.parquet
 
-- name: PXD017199
-  base_url: "https://browse.quantms.org/quantms/datasets/PXD017199/c29f87a1e559"
+- name: PXD048538
+  base_url: "https://browse.quantms.org/quantms/datasets/PXD048538/e60b9e9aa4c8"
   files:
-  - PXD017199.dataset.parquet
-  - PXD017199.sample.parquet
-  - PXD017199.run.parquet
+  - PXD048538.dataset.parquet
+  - PXD048538.sample.parquet
+  - PXD048538
 
-- name: PXD030304
-  base_url: "https://browse.quantms.org/quantms/datasets/PXD030304/fb6d543960a7"
+- name: PXD036826
+  base_url: "https://browse.quantms.org/quantms/datasets/PXD036826/11181fff63d2"
   files:
-  - PXD030304.dataset.parquet
-  - PXD030304.sample.parquet
-  - PXD030304.run.parquet
+  - PXD036826.dataset.parquet
+  - PXD036826.sample.parquet
+  - PXD036826.run.parquet
+
+- name: PXD058009
+  base_url: "https://browse.quantms.org/quantms/datasets/PXD058009/c0defd8c2d4f"
+  files:
+  - PXD058009.dataset.parquet
+  - PXD058009.sample.parquet
+  - PXD058009.run.parquet
