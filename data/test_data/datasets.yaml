@@ -32,7 +32,7 @@ datasets:
   files:
   - PXD048538.dataset.parquet
   - PXD048538.sample.parquet
-  - PXD048538
+  - PXD048538.run.parquet
 
 - name: PXD036826
   base_url: "https://browse.quantms.org/quantms/datasets/PXD036826/11181fff63d2"
