@@ -1,0 +1,44 @@
+{
+  "psms_target_1pct": 161646,
+  "per_line_target_psms": {
+    "AGS": 32024,
+    "SNU719": 31893,
+    "TMK1": 33008,
+    "YCCEL1": 33640,
+    "eAGS": 31081
+  },
+  "per_line_target_peptides": {
+    "AGS": 19775,
+    "SNU719": 18609,
+    "TMK1": 20237,
+    "YCCEL1": 20167,
+    "eAGS": 19980
+  },
+  "EBV_target_psms_per_line": {
+    "SNU719": 1,
+    "YCCEL1": 2,
+    "eAGS": 4
+  },
+  "EBV_target_peptides_per_line": {
+    "SNU719": 1,
+    "YCCEL1": 2,
+    "eAGS": 4
+  },
+  "EBV_decoy_psms_per_line": {
+    "eAGS": 1
+  },
+  "EBV_proteins_per_line": {
+    "SNU719": [
+      "BTRF1_EBVA8 Uncharacterized protein BTRF1/BTRF1_EBVB9 Uncharacterized protein BTRF1/BTRF1_HHV4G Uncharacterized protein BTRF1"
+    ],
+    "YCCEL1": [
+      "EAD_EBVA8 DNA polymerase processivity factor BMRF1/EAD_EBVB9 DNA polymerase processivity factor BMRF1/EAD_HHV4G DNA polymerase processivity factor BMRF1"
+    ],
+    "eAGS": [
+      "CVC1_EBVB9 Capsid vertex component 1",
+      "EAD_EBVA8 DNA polymerase processivity factor BMRF1/EAD_EBVB9 DNA polymerase processivity factor BMRF1/EAD_HHV4G DNA polymerase processivity factor BMRF1",
+      "GH_EBVA8 Envelope glycoprotein H/GH_EBVB9 Envelope glycoprotein H/GH_HHV4G Envelope glycoprotein H",
+      "PORTL_EBVA8 Portal protein/PORTL_EBVB9 Portal protein/PORTL_HHV4G Portal protein"
+    ]
+  }
+}

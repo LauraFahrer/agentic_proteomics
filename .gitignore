@@ -1,2 +1,6 @@
 work_log.csv
 __pycache__/
+*.pyc
+
+# Large local analysis inputs (fetched by scripts/00_download.sh)
+runs/**/data_cache/

@@ -1,0 +1,162 @@
+{
+  "cytoband_hotspots_top": [
+    [
+      "Ocum1",
+      "15q24",
+      25,
+      10,
+      2.4668821165693444,
+      "SNUPN, MPI, SNX33, PTPN9, SCAMP2, ULK3, CSK, MAN2C1, ARIH1, EDC3"
+    ],
+    [
+      "N87",
+      "17q12",
+      22,
+      7,
+      1.7948466558155787,
+      "ERBB2, MIEN1, GRB7, CDK12, MED1, LASP1, PIP4K2B"
+    ],
+    [
+      "MKN28",
+      "22q11",
+      33,
+      6,
+      1.0166589978879517,
+      "PI4KA, SNAP29, CRKL, MED15, TRMT2A, RANBP1"
+    ],
+    [
+      "Ocum1",
+      "14q32",
+      42,
+      4,
+      1.1742257499463642,
+      "CDC42BPB, GSKIP, WDR20, ATXN3"
+    ],
+    [
+      "MKN28",
+      "8q24",
+      52,
+      3,
+      0.621564053631466,
+      "EFR3A, NDRG1, ASAP1"
+    ],
+    [
+      "KatoIII",
+      "11q23",
+      32,
+      3,
+      0.9890950890461718,
+      "BUD13, ZPR1, DDX6"
+    ],
+    [
+      "N87",
+      "10q25",
+      17,
+      3,
+      0.9572185317481176,
+      "ABLIM1, CCDC186, GSTO1"
+    ],
+    [
+      "YCC3",
+      "9p13",
+      22,
+      3,
+      0.48766364429306536,
+      "VCP, UNC13B, STOML2"
+    ],
+    [
+      "YCCEL1",
+      "19p13",
+      186,
+      3,
+      0.0870773641159426,
+      "GDF15, MAN2B1, DNASE2"
+    ]
+  ],
+  "lineageTF_vs_metabolic_score": {
+    "pearson_r": 0.7900256421622065,
+    "p": 0.0007737901686537787,
+    "spearman_rho": 0.7356009644240469,
+    "p_spearman": 0.0027127634230079993,
+    "within_EMT_rho": 0.4531634835874829,
+    "within_EMT_p": 0.30718124105410644,
+    "within_Metab_rho": 0.28571428571428575,
+    "within_Metab_p": 0.5345092286010406
+  },
+  "lineageTF_correlated_sets_pos": [
+    "REACTOME_MITOCHONDRIAL_TRANSLATION",
+    "HALLMARK_OXIDATIVE_PHOSPHORYLATION",
+    "GOBP_SMALL_MOLECULE_CATABOLIC_PROCESS",
+    "GOBP_ORGANIC_ACID_CATABOLIC_PROCESS",
+    "GOBP_MITOCHONDRIAL_GENE_EXPRESSION",
+    "REACTOME_THE_CITRIC_ACID_TCA_CYCLE_AND_RESPIRATORY_ELECTRON_TRANSPORT",
+    "GOBP_FATTY_ACID_METABOLIC_PROCESS",
+    "GOBP_CELLULAR_RESPIRATION",
+    "GOBP_INORGANIC_ION_TRANSMEMBRANE_TRANSPORT",
+    "GOBP_MITOCHONDRIAL_TRANSLATION",
+    "GOBP_AEROBIC_RESPIRATION",
+    "GOBP_PROTON_TRANSMEMBRANE_TRANSPORT",
+    "HALLMARK_FATTY_ACID_METABOLISM",
+    "GOBP_ENERGY_DERIVATION_BY_OXIDATION_OF_ORGANIC_COMPOUNDS",
+    "GOBP_LIPID_CATABOLIC_PROCESS"
+  ],
+  "lineageTF_correlated_sets_neg": [
+    "REACTOME_INFLUENZA_INFECTION",
+    "REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA",
+    "REACTOME_EUKARYOTIC_TRANSLATION_INITIATION",
+    "GOBP_NUCLEAR_TRANSPORT",
+    "REACTOME_NONSENSE_MEDIATED_DECAY_NMD",
+    "GOBP_CYTOPLASMIC_TRANSLATION",
+    "GOBP_RNA_LOCALIZATION",
+    "GOBP_ESTABLISHMENT_OF_RNA_LOCALIZATION",
+    "REACTOME_REGULATION_OF_EXPRESSION_OF_SLITS_AND_ROBOS",
+    "REACTOME_RESPONSE_OF_EIF2AK4_GCN2_TO_AMINO_ACID_DEFICIENCY",
+    "REACTOME_EUKARYOTIC_TRANSLATION_ELONGATION",
+    "REACTOME_SIGNALING_BY_ROBO_RECEPTORS",
+    "KEGG_RIBOSOME",
+    "GOBP_RNA_EXPORT_FROM_NUCLEUS",
+    "GOBP_REGULATION_OF_MRNA_METABOLIC_PROCESS"
+  ],
+  "EBV_module_TMKout": {
+    "n_up": 111,
+    "n_down": 53,
+    "score": {
+      "AGS": -0.566,
+      "eAGS": 0.26,
+      "AZ521": -1.252,
+      "MKN28": -1.309,
+      "N87": -1.31,
+      "SNU1750": -1.52,
+      "TMK1": 0.907,
+      "KatoIII": -0.869,
+      "NCC24": 2.472,
+      "Ocum1": -0.97,
+      "SNU601": -0.566,
+      "SNU719": 2.576,
+      "YCC3": -1.281,
+      "YCCEL1": 2.93
+    },
+    "TMK1_rank_among_EBVneg_plus_TMK1": 1,
+    "TMK1_z_vs_EBVneg": 5.728124721285141
+  },
+  "EBV_module_LOO": {
+    "TMK1_score": 0.9066586257964258,
+    "heldout_EBVneg_scores": {
+      "AGS": -0.301,
+      "AZ521": -1.033,
+      "MKN28": -1.05,
+      "N87": -1.04,
+      "SNU1750": -1.366,
+      "KatoIII": -0.356,
+      "Ocum1": -0.409,
+      "SNU601": -0.229,
+      "YCC3": -0.969
+    },
+    "TMK1_exceeds_all_heldout_EBVneg": true,
+    "TMK1_z_vs_heldout_EBVneg": 3.9249476993897563,
+    "EBVnat_mean_score_range": [
+      2.6167611296220836,
+      2.6859434439966825
+    ]
+  }
+}

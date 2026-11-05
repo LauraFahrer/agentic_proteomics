@@ -1,0 +1,9 @@
+{ "database": { "bucket_size": 32768,
+    "enzyme": {"missed_cleavages": 2, "min_len": 7, "max_len": 40, "cleave_at": "KR", "restrict": "P"},
+    "fragment_min_mz": 150, "fragment_max_mz": 2000, "peptide_min_mass": 500, "peptide_max_mass": 5000,
+    "ion_kinds": ["b","y"], "min_ion_index": 2, "static_mods": {"C": 57.021464},
+    "variable_mods": {"M": [15.994915], "^": [42.010565]}, "max_variable_mods": 2,
+    "decoy_tag": "rev_", "generate_decoys": true, "fasta": "<DATA>/ebv/db/human_ebv.fasta" },
+  "precursor_tol": {"ppm": [-10,10]}, "fragment_tol": {"ppm": [-20,20]}, "isotope_errors": [0,1],
+  "deisotope": true, "chimera": false, "predict_rt": true, "min_peaks": 15, "max_peaks": 150, "report_psms": 1,
+  "mzml_paths": ["<DATA>/ebv/mzml/Gastric_WP_DDAlibrary_AGS.mzML","<DATA>/ebv/mzml/Gastric_WP_DDAlibrary_SNU719.mzML","<DATA>/ebv/mzml/Gastric_WP_DDAlibrary_TMK1.mzML","<DATA>/ebv/mzml/Gastric_WP_DDAlibrary_YCCEL1.mzML","<DATA>/ebv/mzml/Gastric_WP_DDAlibrary_eAGS.mzML"] }
