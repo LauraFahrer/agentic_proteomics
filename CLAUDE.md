@@ -1,12 +1,6 @@
-# CLAUDE.md
+# Agentic Proteomics
 
-## Project Overview
-
-### Project Name
-
-Agentic Proteomics
-
-### Description
+## Description
 
 This project investigates the capabilities and limitations of Large Language Models (LLMs) in conducting agentic scientific research using publicly available proteomics datasets.
 
