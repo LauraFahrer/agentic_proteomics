@@ -20,9 +20,10 @@
    - **(a)** a gastrointestinal lineage transcription-factor programme: HNF1A, FOXA2, ANXA10 and CES2 are detected in **all 7** "Metabolism" lines and **none** of the 7 "EMT" lines, and HNF4A, LGALS4, MUC13 and AGR2 follow a similar pattern;
    - **(b)** a shift in proteome allocation, with cytosolic ribosome/translation proteins high in the "EMT" group and mitochondrial OXPHOS/fatty-acid oxidation proteins high in the "Metabolism" group.
 4. **Natural EBV+ lines share a distinct proteome module.** The ER secretory and N-glycosylation machinery and OXPHOS proteins are up. Spliceosome proteins and transcriptional co-activators (EP300, Mediator) are down.
-   - **TMK1**, listed as EBV-negative, is the only EBV-negative line that partly carries this module (leave-one-out z = 3.9).
-   - **eAGS** (AGS infected with EBV in vitro) does **not** reproduce it (ρ = 0.12). Instead, eAGS shows loss of MHC-I antigen presentation and interferon-response proteins and gain of E2F targets.
-5. **Three hypotheses** are proposed in Section 6: H1 lineage TFs drive the "Metabolism" subtype; H2 the natural EBV-GC proteome state, and TMK1's EBV status; H3 immune evasion by eAGS after in-vitro infection.
+   - **TMK1**, listed as EBV-negative, is the only EBV-negative line that partly carries this module (leave-one-out z = 3.9). A **direct re-search of the raw spectra against EBV proteins found no EBV peptide in TMK1** (Section 5.4), so this resemblance reflects a shared differentiation/secretory state, not viral carriage — the carrier idea was tested and not supported.
+   - **eAGS** (AGS infected with EBV in vitro) does **not** reproduce the natural-EBV module (ρ = 0.12). Instead, eAGS shows loss of MHC-I antigen presentation and interferon-response proteins and gain of E2F targets.
+5. **The raw-spectra EBV search is positive where expected and negative where expected.** EBV proteins were directly detected in eAGS (in-vitro infected) and in the two natural EBV+ lines searched (YCCEL1, SNU719), and were absent in the two EBV-negative lines (AGS, TMK1) — an orthogonal confirmation that revises the TMK1 part of H2 (Section 5.4).
+6. **Three hypotheses** are proposed in Section 6: H1 lineage TFs drive the "Metabolism" subtype; H2 the natural EBV-GC proteome state (with the TMK1 carrier sub-claim now rejected by the direct search); H3 immune evasion by eAGS after in-vitro infection.
 
 ---
 
@@ -170,17 +171,32 @@ Contrasting the 3 natural EBV+ lines with the 10 EBV-negative lines (TMK1 and eA
 - **Down:** spliceosome and transcriptional co-activators (EP300, Mediator subunits MED16/19, WAPL, ORC2/4, KAT8).
 - Enrichment: `GOCC_INTRINSIC_COMPONENT_OF_ORGANELLE_MEMBRANE` (z = +12), `HALLMARK_OXIDATIVE_PHOSPHORYLATION` (z = +11), `REACTOME_ASPARAGINE_N_LINKED_GLYCOSYLATION` (z = +9) up; `REACTOME_MRNA_SPLICING` and `GOCC_TRANSCRIPTION_REGULATOR_COMPLEX` (z ≈ −9 to −10) down.
 
-**TMK1 (labelled EBV-negative) carries this module.** Scored on the module *defined without it*:
+**TMK1 (labelled EBV-negative) carries this module at the proteome level.** Scored on the module *defined without it*:
 - TMK1 score = 0.91, versus a range of −1.37 to −0.23 for the nine held-out EBV-negative lines (leave-one-out z = 3.9; it exceeds every EBV-negative line). Natural EBV+ lines score 2.5–2.9.
 
-This is consistent with external facts that TMK1 is a line used for experimental EBV infection (e.g. PMID 18316606, 32338409 describe EBV-infected TMK1), so some stocks carry EBV. Two readings are possible and the proteome alone cannot separate them: (i) the sequenced TMK1 stock carries EBV, or (ii) TMK1 shares the differentiation/secretory state without the virus. Section 5.4 tests (i) directly in the raw spectra.
+Two readings are possible from the proteome alone: (i) the sequenced TMK1 stock carries EBV (TMK1 sublines are used for experimental EBV infection, e.g. PMID 18316606, 32338409), or (ii) TMK1 shares the differentiation/secretory state without the virus. **Section 5.4 tests this directly and selects reading (ii):** a re-search of the TMK1 raw spectra against EBV proteins returns zero EBV peptides, so there is no positive evidence that the sequenced stock carries the virus. The module membership of TMK1 therefore reflects a shared cell state, not EBV.
 
 ### 5.4 Direct search for EBV peptides in the raw spectra
 (`15_ebv_peptide_search.png`, `tables/ebv_peptide_hits.csv`, `tables/ebv_search_summary.json`)
 
 The quantms output cannot contain viral proteins because it searched a human-only database. To test the EBV-status questions directly, the whole-proteome DDA spectral-library raw files for AGS, eAGS, TMK1, SNU719 and YCCEL1 were re-searched with Sage against human Swiss-Prot + all reviewed EBV proteins. EBV evidence is counted as target PSMs at 1% spectrum- and peptide-level FDR whose peptide maps only to EBV (not to any human protein), with EBV-decoy PSMs at the same thresholds as a subset-specific false-hit estimate.
 
-> _[RESULTS PENDING — this section is filled in by `05_ebv_summary.py` once the raw-file search completes. It will report, per line, the number of EBV-unique peptides and the EBV proteins identified, which directly tests whether the sequenced TMK1 stock carries EBV and whether eAGS expresses EBV proteins. If no confident EBV peptides are found in any line, that will be stated plainly as a negative result (e.g. latency-type expression below the detection limit of a whole-proteome DDA run), not glossed over.]_
+Five lines were re-searched (AGS, eAGS, TMK1, SNU719, YCCEL1). Each gave ~31,000–33,600 target PSMs and ~18,600–20,200 peptides at 1% FDR, so coverage is deep. EBV-unique peptides at 1% spectrum- and peptide-FDR:
+
+| Line | EBV status (Table S1) | EBV-unique peptides | EBV decoy PSMs | EBV proteins identified |
+|---|---|---|---|---|
+| AGS | EBV− | **0** | 0 | — |
+| TMK1 | EBV− | **0** | 0 | — |
+| SNU719 | natural EBV+ | 1 | 0 | BTRF1 (tegument) |
+| YCCEL1 | natural EBV+ | 2 | 0 | BMRF1 (DNA-pol processivity factor EA-D); strongest hit hyperscore 56, q = 4e-5 |
+| eAGS | in-vitro EBV | 4 | 1 | BMRF1 (EA-D), glycoprotein H (q = 4e-5), capsid vertex CVC1, portal protein |
+
+Interpretation:
+- **The infected and natural EBV+ lines are positive.** eAGS (in-vitro infected) and the two natural EBV+ lines searched (SNU719, YCCEL1) all yield EBV peptides from early-lytic / structural proteins (BMRF1, glycoprotein H, capsid, portal, BTRF1). The BMRF1 peptide **IPAVSVPILR** is seen independently in both YCCEL1 and eAGS, which raises confidence that it is a genuine EBV identification. This directly confirms EBV protein expression (a lytic-cycle fraction) in these lines. Absolute levels are very low, as expected for EBV-GC, which is predominantly latent.
+- **The two EBV-negative controls are negative:** AGS (0) and **TMK1 (0)**.
+- **Subset-FDR caveat:** eAGS also has 1 EBV *decoy* hit at the same thresholds, so within the tiny EBV subset roughly 1 of its 4 target hits could be a false match; but the high-confidence hits (glycoprotein H q = 4e-5; BMRF1 shared with YCCEL1) survive this caveat. NCC24 (the third natural EBV+ line) was not searched (not downloaded), so the natural-EBV positives are 2 of 3 lines.
+
+**This is a direct, orthogonal result and it revises hypothesis H2.** The whole-proteome DDA data contain **no detectable EBV peptide in TMK1**. So the earlier observation that TMK1's proteome resembles the natural-EBV module (Section 5.3) is **not** explained by the sequenced TMK1 stock carrying EBV — at least, there is no positive evidence for carriage, and an EBV-negative line was expected to give zero. The resemblance is therefore better attributed to a **shared differentiation / ER-secretory state** rather than to the virus. A trace, below-detection latent infection cannot be formally excluded by a negative DDA result, but nothing here supports it, and it should not be claimed. (The EBV-module analysis in 5.3 does not depend on TMK1; it was explicitly defined without it.)
 
 ### 5.5 In-vitro EBV infection (eAGS vs AGS) does not reproduce the natural-EBV proteome
 (`09_volcanoes.png` D, `10_eAGS_vs_naturalEBV.png`, `tables/diff_eAGS_vs_AGS_replicates.csv.gz`)
@@ -205,12 +221,13 @@ Each hypothesis gives the supporting evidence, the evidence against / confounder
 - **Sufficient?** Sufficient to propose, not to prove causation.
 - **Test:** knock out or over-express HNF1A/HNF4A in lines from each group and measure the OXPHOS/FAO proteome and oxygen-consumption rate; check HNF4A ChIP targets for enrichment of FAO genes; in DepMap, test whether HNF1A/HNF4A dependency and FAO-gene co-dependency track with the lineage-TF-high lines.
 
-### H2 — The natural EBV+ GC lines occupy a shared proteome state (ER-secretory + N-glycosylation + OXPHOS up, spliceosome + transcriptional co-activators down); TMK1 belongs to this state and its EBV status in this dataset should be verified.
+### H2 — The natural EBV+ GC lines occupy a shared proteome state: ER-secretory + N-glycosylation + OXPHOS up, spliceosome + transcriptional co-activators (EP300, Mediator) down.
 
-- **For:** a coherent 111/53-protein module shared by all 3 natural EBV+ lines; TMK1 is the only nominally EBV-negative line that carries it (leave-one-out z = 3.9); CDKN2A loss in the EBV+ lines matches known p16 methylation; the module's N-glycosylation/ERAD arm is biologically plausible for the heavily glycosylated EBV latent membrane proteins; external reports describe EBV-infected TMK1 sublines.
-- **Against / confounders:** only 3 EBV+ lines, all also in the "Metabolism" group, so EBV and lineage are confounded; the module overlaps the H1 metabolic programme; the published Table S1 lists TMK1 as EBV-negative, so the carrier reading needs the direct test (Section 5.4).
-- **Sufficient?** The module is well supported. The specific TMK1 claim is a hypothesis pending the Section 5.4 search and an orthogonal EBER/DNA assay.
-- **Test:** EBER in-situ hybridisation / EBV-qPCR on the exact stocks; the Section 5.4 peptide search; and, to separate EBV from lineage, compare EBV+ vs EBV− lines matched for the lineage-TF programme.
+- **For:** a coherent 111/53-protein module shared by all 3 natural EBV+ lines; CDKN2A loss in the EBV+ lines matches known p16 methylation; the module's N-glycosylation/ERAD arm is biologically plausible for the heavily glycosylated EBV membrane glycoproteins; and the raw-spectra search (Section 5.4) directly confirms EBV protein expression in the natural EBV+ lines tested (YCCEL1, SNU719) and in eAGS.
+- **Against / confounders:** only 3 EBV+ lines, all also in the "Metabolism" group, so EBV status and GI lineage are confounded, and the module overlaps the H1 metabolic programme — the module may be as much about differentiation state as about the virus.
+- **Resolved sub-claim:** an earlier reading that TMK1 is a cryptic EBV carrier (because it scores on the module) was **tested and rejected**: the direct peptide search found no EBV peptide in TMK1 (Section 5.4). TMK1's module membership is now attributed to shared cell state, not EBV.
+- **Sufficient?** The module is well supported as a description; its attribution to EBV *per se* (vs lineage) is not yet separable with n = 3 confounded lines.
+- **Test:** to separate EBV from lineage, compare EBV+ vs EBV− lines matched for the lineage-TF programme, or follow the isogenic AGS→eAGS pair over time; EBER-ISH / EBV-qPCR to confirm status on the exact stocks.
 
 ### H3 — In-vitro EBV infection of AGS lowers MHC-class-I antigen presentation and the interferon response, a cell-intrinsic immune-evasion state.
 

@@ -32,7 +32,12 @@ def accs(p):
 psm["accs"] = psm.proteins.map(lambda p: [a.replace("rev_", "") for a in accs(p)])
 psm["all_ebv"] = psm.accs.map(lambda a: all(x in ebv_acc for x in a))
 psm["stripped"] = psm.peptide.map(lambda s: re.sub(r"\[.*?\]|[^A-Z]", "", s))
-psm["in_human"] = psm.stripped.map(lambda s: s.replace("I", "L") in human)
+# The human-membership test is expensive (substring in the concatenated proteome); it only
+# matters for EBV-assigned peptides, so compute it only there (everything else: in_human=True).
+psm["in_human"] = True
+ebv_mask = psm.all_ebv
+uniq = {s: (s.replace("I", "L") in human) for s in psm.loc[ebv_mask, "stripped"].unique()}
+psm.loc[ebv_mask, "in_human"] = psm.loc[ebv_mask, "stripped"].map(uniq)
 psm["line"] = psm.filename.str.extract(r"DDAlibrary_(\w+)\.mzML")[0]
 ok = (psm.spectrum_q <= 0.01) & (psm.peptide_q <= 0.01)
 tgt = psm[ok & (psm.label == 1)]
