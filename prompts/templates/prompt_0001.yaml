@@ -9,7 +9,7 @@ objective:
   Explore the proteomics dataset PXD048538 and generate scientific hypotheses that are supported by the available data.
 
 data:
-  Dataset URL: https://portal.quantms.org/collections/celllines/PXD048538/41b03dd48c8b
+  Dataset URL: https://portal.quantms.org/collections/celllines/PXD048538/e60b9e9aa4c8
   Associated scientifc publication: https://febs.onlinelibrary.wiley.com/doi/10.1002/1878-0261.13654
 
 tasks:

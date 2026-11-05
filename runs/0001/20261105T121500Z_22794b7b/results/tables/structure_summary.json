@@ -1,0 +1,81 @@
+{
+  "spectronaut_proteins": 5677,
+  "quantms_proteins": 8152,
+  "matched_by_leading_accession": 5332,
+  "concordance_median_r": 0.8369759502158447,
+  "concordance_median_r_top25pct_variable": 0.8868656141494111,
+  "concordance_frac_r_gt_0.8_top25pct_variable": 0.7063227953410982,
+  "pca_complete_proteins": 3531,
+  "pca_explained_variance": [
+    0.1845,
+    0.1121,
+    0.0947,
+    0.0839,
+    0.0731,
+    0.0606
+  ],
+  "nmf": [
+    {
+      "k": 2,
+      "ARI_vs_paper": 0.46938775510204084,
+      "clusters": "TMK1,KatoIII,NCC24,Ocum1,SNU601,SNU719,YCCEL1; AGS,eAGS,AZ521,MKN28,N87,SNU1750,YCC3"
+    },
+    {
+      "k": 3,
+      "ARI_vs_paper": 0.16055846422338568,
+      "clusters": "AGS,eAGS,AZ521,SNU1750; MKN28,N87,KatoIII,Ocum1,SNU601,YCC3; TMK1,NCC24,SNU719,YCCEL1"
+    }
+  ],
+  "hallmark_top": [
+    [
+      "ADIPOGENESIS",
+      -0.553,
+      0.0474
+    ],
+    [
+      "FATTY_ACID_METABOLISM",
+      -0.5584,
+      0.0474
+    ],
+    [
+      "PEROXISOME",
+      -0.426,
+      0.0474
+    ],
+    [
+      "OXIDATIVE_PHOSPHORYLATION",
+      -0.617,
+      0.0641
+    ],
+    [
+      "XENOBIOTIC_METABOLISM",
+      -0.3921,
+      0.1093
+    ],
+    [
+      "BILE_ACID_METABOLISM",
+      -0.4489,
+      0.1862
+    ],
+    [
+      "ESTROGEN_RESPONSE_LATE",
+      -0.4052,
+      0.1862
+    ],
+    [
+      "ALLOGRAFT_REJECTION",
+      0.3089,
+      0.1862
+    ],
+    [
+      "MYC_TARGETS_V1",
+      0.3015,
+      0.2858
+    ],
+    [
+      "COAGULATION",
+      -0.4075,
+      0.3831
+    ]
+  ]
+}
