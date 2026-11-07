@@ -1,0 +1,133 @@
+{
+  "genes_for_pathway_scoring": 4996,
+  "most_variable_hallmarks": {
+    "MYC_TARGETS_V2": 0.455,
+    "OXIDATIVE_PHOSPHORYLATION": 0.452,
+    "TGF_BETA_SIGNALING": 0.394,
+    "E2F_TARGETS": 0.387,
+    "G2M_CHECKPOINT": 0.383,
+    "FATTY_ACID_METABOLISM": 0.376,
+    "INTERFERON_ALPHA_RESPONSE": 0.374,
+    "COAGULATION": 0.371,
+    "ADIPOGENESIS": 0.348,
+    "CHOLESTEROL_HOMEOSTASIS": 0.337,
+    "ESTROGEN_RESPONSE_LATE": 0.336,
+    "BILE_ACID_METABOLISM": 0.331
+  },
+  "least_variable_hallmarks": {
+    "IL2_STAT5_SIGNALING": 0.211,
+    "TNFA_SIGNALING_VIA_NFKB": 0.211,
+    "UV_RESPONSE_UP": 0.206,
+    "ANDROGEN_RESPONSE": 0.192,
+    "INFLAMMATORY_RESPONSE": 0.172,
+    "HEME_METABOLISM": 0.152
+  },
+  "pathway_modules": {
+    "1": [
+      "MYC_TARGETS_V2",
+      "E2F_TARGETS",
+      "G2M_CHECKPOINT",
+      "MYC_TARGETS_V1",
+      "UNFOLDED_PROTEIN_RESPONSE",
+      "DNA_REPAIR",
+      "SPERMATOGENESIS"
+    ],
+    "2": [
+      "TGF_BETA_SIGNALING",
+      "COAGULATION",
+      "EPITHELIAL_MESENCHYMAL_TRANSITION",
+      "UV_RESPONSE_DN",
+      "MYOGENESIS",
+      "APICAL_JUNCTION",
+      "MITOTIC_SPINDLE",
+      "PI3K_AKT_MTOR_SIGNALING",
+      "APOPTOSIS",
+      "COMPLEMENT",
+      "KRAS_SIGNALING_UP"
+    ],
+    "3": [
+      "INTERFERON_ALPHA_RESPONSE",
+      "HYPOXIA",
+      "INTERFERON_GAMMA_RESPONSE",
+      "ALLOGRAFT_REJECTION"
+    ],
+    "4": [
+      "OXIDATIVE_PHOSPHORYLATION",
+      "FATTY_ACID_METABOLISM",
+      "ADIPOGENESIS",
+      "CHOLESTEROL_HOMEOSTASIS",
+      "ESTROGEN_RESPONSE_LATE",
+      "BILE_ACID_METABOLISM",
+      "XENOBIOTIC_METABOLISM",
+      "PEROXISOME",
+      "ESTROGEN_RESPONSE_EARLY",
+      "P53_PATHWAY",
+      "GLYCOLYSIS",
+      "REACTIVE_OXYGEN_SPECIES_PATHWAY"
+    ]
+  },
+  "module_correlation": [
+    [
+      1.0,
+      -0.03,
+      0.32,
+      -0.12
+    ],
+    [
+      -0.03,
+      1.0,
+      0.36,
+      0.24
+    ],
+    [
+      0.32,
+      0.36,
+      1.0,
+      0.46
+    ],
+    [
+      -0.12,
+      0.24,
+      0.46,
+      1.0
+    ]
+  ],
+  "module_vs_subtype": [
+    {
+      "module": 1,
+      "n_pathways": 7,
+      "diff_EMT_minus_Metab": 0.18360104491464393,
+      "welch_p": 0.23662828994212154,
+      "members": "MYC_TARGETS_V2, E2F_TARGETS, G2M_CHECKPOINT, MYC_TARGETS_V1, UNFOLDED_PROTEIN_RESPONSE, DNA_REPAIR, SPERMATOGENESIS"
+    },
+    {
+      "module": 2,
+      "n_pathways": 11,
+      "diff_EMT_minus_Metab": -0.0658467201461364,
+      "welch_p": 0.5992007170924538,
+      "members": "TGF_BETA_SIGNALING, COAGULATION, EPITHELIAL_MESENCHYMAL_TRANSITION, UV_RESPONSE_DN, MYOGENESIS, APICAL_JUNCTION, MITOTIC_SPINDLE, PI3K_AKT_MTOR_SIGNALING, APOPTOSIS, COMPLEMENT, KRAS_SIGNALING_UP"
+    },
+    {
+      "module": 3,
+      "n_pathways": 4,
+      "diff_EMT_minus_Metab": 0.013576990896497852,
+      "welch_p": 0.9259360539990173,
+      "members": "INTERFERON_ALPHA_RESPONSE, HYPOXIA, INTERFERON_GAMMA_RESPONSE, ALLOGRAFT_REJECTION"
+    },
+    {
+      "module": 4,
+      "n_pathways": 12,
+      "diff_EMT_minus_Metab": -0.35308802375457987,
+      "welch_p": 0.007890043763060533,
+      "members": "OXIDATIVE_PHOSPHORYLATION, FATTY_ACID_METABOLISM, ADIPOGENESIS, CHOLESTEROL_HOMEOSTASIS, ESTROGEN_RESPONSE_LATE, BILE_ACID_METABOLISM, XENOBIOTIC_METABOLISM, PEROXISOME, ESTROGEN_RESPONSE_EARLY, P53_PATHWAY, GLYCOLYSIS, REACTIVE_OXYGEN_SPECIES_PATHWAY"
+    }
+  ],
+  "most_anticorrelated_modules": {
+    "modules": [
+      1,
+      4
+    ],
+    "pearson_r": -0.11716959203560338,
+    "p": 0.6899573511901926
+  }
+}

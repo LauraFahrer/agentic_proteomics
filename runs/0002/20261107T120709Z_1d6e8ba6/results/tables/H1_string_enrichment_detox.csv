@@ -1,0 +1,99 @@
+category,term,description,number_of_genes,fdr
+KEGG,hsa00480,Glutathione metabolism,11,1.24e-22
+RCTM,HSA-156590,Glutathione conjugation,10,2.59e-21
+Process,GO:0006749,Glutathione metabolic process,10,5.09e-18
+Hallmark,M5938,Reactive oxygen species pathway,8,9.6e-16
+Process,GO:1990748,Cellular detoxification,10,1.5e-15
+Process,GO:0006575,Modified amino acid metabolic process,11,1.5e-15
+Process,GO:0009636,Response to toxic substance,11,2.4e-14
+Process,GO:0006790,Sulfur compound metabolic process,11,4.48e-14
+RCTM,HSA-1430728,Metabolism,16,4.05e-12
+WikiPathways,WP702,Metapathway biotransformation Phase I and II,9,7.96e-12
+KEGG,hsa01100,Metabolic pathways,14,2.98e-11
+WikiPathways,WP2884,NRF2 pathway,8,5.88e-11
+WikiPathways,WP100,Glutathione metabolism,5,3.7e-10
+WikiPathways,WP2882,Nuclear receptors meta pathway,9,3.7e-10
+Process,GO:0070887,Cellular response to chemical stimulus,14,5.85e-09
+Process,GO:0006979,Response to oxidative stress,9,5.85e-09
+RCTM,HSA-9711123,Cellular response to chemical stress,7,7.15e-08
+Process,GO:0006750,Glutathione biosynthetic process,4,1.77e-07
+Process,GO:0019752,Carboxylic acid metabolic process,10,1.77e-07
+KEGG,hsa00982,Drug metabolism - cytochrome P450,5,1.99e-07
+KEGG,hsa05204,Chemical carcinogenesis - DNA adducts,5,1.99e-07
+Process,GO:0044272,Sulfur compound biosynthetic process,6,2e-07
+KEGG,hsa01524,Platinum drug resistance,5,2.04e-07
+KEGG,hsa05225,Hepatocellular carcinoma,6,2.04e-07
+KEGG,hsa00980,Metabolism of xenobiotics by cytochrome P450,5,2.04e-07
+KEGG,hsa00983,Drug metabolism - other enzymes,5,2.34e-07
+WikiPathways,WP4313,Ferroptosis,5,3.85e-07
+Process,GO:0042221,Response to chemical,15,6.24e-07
+KEGG,hsa04216,Ferroptosis,4,1.54e-06
+KEGG,hsa05418,Fluid shear stress and atherosclerosis,5,2.77e-06
+RCTM,HSA-9759194,Nuclear events mediated by NFE2L2,5,3.26e-06
+Process,GO:0044281,Small molecule metabolic process,11,3.82e-06
+KEGG,hsa01240,Biosynthesis of cofactors,5,4.75e-06
+Process,GO:0045454,Cell redox homeostasis,4,2.82e-05
+KEGG,hsa05208,Chemical carcinogenesis - reactive oxygen species,5,2.88e-05
+RCTM,HSA-174403,Glutathione synthesis and recycling,3,3.62e-05
+WikiPathways,WP2525,Trans sulfuration one carbon metabolism and related pathways,4,4.5e-05
+KEGG,hsa05200,Pathways in cancer,6,9.47e-05
+WikiPathways,WP3612,Photodynamic therapy induced NFE2L2 NRF2 survival signaling,3,0.00013
+RCTM,HSA-5578999,Defective GCLC causes HAGGSD,2,0.00017
+RCTM,HSA-9818027,NFE2L2 regulating anti-oxidant/detoxification enzymes,3,0.00017
+KEGG,hsa00270,Cysteine and methionine metabolism,3,0.00024
+WikiPathways,WP408,Oxidative stress response,3,0.00026
+WikiPathways,WP5434,Cancer pathways,6,0.00028
+Process,GO:0097069,Cellular response to thyroxine stimulus,2,0.00035
+Process,GO:0009410,Response to xenobiotic stimulus,6,0.00043
+KEGG,hsa05207,Chemical carcinogenesis - receptor activation,4,0.00049
+RCTM,HSA-5579029,Metabolic disorders of biological oxidation enzymes,3,0.00065
+RCTM,HSA-3299685,Detoxification of Reactive Oxygen Species,3,0.00071
+Process,GO:1901700,Response to oxygen-containing compound,9,0.00072
+Process,GO:0006690,Icosanoid metabolic process,4,0.001
+Process,GO:0006536,Glutamate metabolic process,3,0.001
+WikiPathways,WP4518,Gamma glutamyl cycle for the biosynthesis and degradation of glutathione including diseases,2,0.001
+Process,GO:0006629,Lipid metabolic process,8,0.0012
+Process,GO:0006805,Xenobiotic metabolic process,4,0.0016
+Process,GO:0044752,Response to human chorionic gonadotropin,2,0.0016
+Process,GO:1901687,Glutathione derivative biosynthetic process,2,0.0016
+Process,GO:0019725,Cellular homeostasis,6,0.0053
+Process,GO:0051409,Response to nitrosative stress,2,0.0062
+WikiPathways,WP3,Transcriptional activation by NRF2 in response to phytochemicals,2,0.0064
+WikiPathways,WP4504,Cysteine and methionine catabolism,2,0.0067
+KEGG,hsa00053,Ascorbate and aldarate metabolism,2,0.0069
+Hallmark,M5924,MTORC1 signaling,3,0.0079
+Hallmark,M5934,Xenobiotic metabolism,3,0.0079
+Hallmark,M5937,Glycolysis,3,0.0079
+Process,GO:0008152,Metabolic process,15,0.0094
+Process,GO:0034635,Glutathione transport,2,0.0103
+Process,GO:0006534,Cysteine metabolic process,2,0.0103
+Process,GO:0019852,L-ascorbic acid metabolic process,2,0.0103
+Process,GO:0071372,Cellular response to follicle-stimulating hormone stimulus,2,0.0116
+Process,GO:0044283,Small molecule biosynthetic process,5,0.0116
+WikiPathways,WP4357,NRF2 ARE regulation,2,0.013
+KEGG,hsa00620,Pyruvate metabolism,2,0.0147
+RCTM,HSA-5423646,Aflatoxin activation and detoxification,2,0.0156
+KEGG,hsa00330,Arginine and proline metabolism,2,0.0157
+Process,GO:2001237,Negative regulation of extrinsic apoptotic signaling pathway,3,0.0163
+Process,GO:0035729,Cellular response to hepatocyte growth factor stimulus,2,0.0167
+Process,GO:0006520,Amino acid metabolic process,4,0.0196
+Process,GO:0110076,Negative regulation of ferroptosis,2,0.0196
+Process,GO:0046394,Carboxylic acid biosynthetic process,4,0.0196
+WikiPathways,WP5113,Antiviral and anti inflammatory effects of Nrf2 on SARS CoV 2 pathway,2,0.022
+KEGG,hsa00561,Glycerolipid metabolism,2,0.0256
+WikiPathways,WP4698,Vitamin D sensitive calcium signaling in depression,2,0.0262
+KEGG,hsa00010,Glycolysis / Gluconeogenesis,2,0.0267
+Process,GO:0043200,Response to amino acid,3,0.0276
+Process,GO:0019370,Leukotriene biosynthetic process,2,0.0276
+Process,GO:0042592,Homeostatic process,7,0.029
+Process,GO:0051900,Regulation of mitochondrial depolarization,2,0.029
+Process,GO:0006950,Response to stress,10,0.0316
+Process,GO:1901701,Cellular response to oxygen-containing compound,6,0.0327
+RCTM,HSA-9753281,Paracetamol ADME,2,0.0376
+Hallmark,M5948,Bile acid metabolism,2,0.0398
+WikiPathways,WP28,Selenium metabolism and selenoproteins,2,0.0426
+Process,GO:0034284,Response to monosaccharide,3,0.0435
+WikiPathways,WP410,Exercise induced circadian regulation,2,0.0436
+Process,GO:0007584,Response to nutrient,3,0.0456
+Process,GO:0042178,Xenobiotic catabolic process,2,0.047
+Process,GO:0097746,Blood vessel diameter maintenance,3,0.047
