@@ -1,0 +1,103 @@
+{
+  "H1_detox": {
+    "n_proteins": 18,
+    "diff_EMT_minus_Metab": -0.7874539304481114,
+    "welch_p": 0.0011829736001914197,
+    "detox_vs_OXPHOS_r": 0.7687313186987091,
+    "detox_vs_OXPHOS_p": 0.001314183648905546,
+    "proteins": [
+      "GCLC",
+      "GCLM",
+      "GSS",
+      "GPX1",
+      "GPX4",
+      "GSTP1",
+      "GSTK1",
+      "GSTM3",
+      "GSTO1",
+      "MGST1",
+      "MGST2",
+      "ALDH3A2",
+      "ALDH4A1",
+      "AKR1A1",
+      "TXNRD1",
+      "PRDX6",
+      "G6PD",
+      "ABCC1"
+    ]
+  },
+  "H1_string_top": [
+    [
+      "KEGG",
+      "Glutathione metabolism",
+      1.24e-22
+    ],
+    [
+      "RCTM",
+      "Glutathione conjugation",
+      2.59e-21
+    ],
+    [
+      "Process",
+      "Glutathione metabolic process",
+      5.09e-18
+    ],
+    [
+      "Hallmark",
+      "Reactive oxygen species pathway",
+      9.6e-16
+    ],
+    [
+      "Process",
+      "Cellular detoxification",
+      1.5e-15
+    ],
+    [
+      "Process",
+      "Modified amino acid metabolic process",
+      1.5e-15
+    ],
+    [
+      "Process",
+      "Response to toxic substance",
+      2.4e-14
+    ],
+    [
+      "Process",
+      "Sulfur compound metabolic process",
+      4.48e-14
+    ],
+    [
+      "RCTM",
+      "Metabolism",
+      4.05e-12
+    ],
+    [
+      "WikiPathways",
+      "Metapathway biotransformation Phase I and II",
+      7.96e-12
+    ]
+  ],
+  "H2_MYC_proteostasis": {
+    "MYC_vs_UPR_r": 0.8690253199108275,
+    "MYC_vs_UPR_p": 5.463812991786566e-05,
+    "MYC_vs_DNArepair_r": 0.6737326355110824,
+    "MYC_vs_DNArepair_p": 0.00824740138671955,
+    "MYC_high_lines": {
+      "NCC24": 0.42,
+      "KatoIII": 0.41,
+      "eAGS": 0.39,
+      "AGS": 0.29
+    }
+  },
+  "H3_oxphos_glycolysis": {
+    "OXPHOS_vs_GLYCOLYSIS_r": 0.4973984454631434,
+    "OXPHOS_vs_GLYCOLYSIS_p": 0.0703407641257877,
+    "OXPHOS_high_lines": {
+      "NCC24": 0.9,
+      "YCCEL1": 0.52,
+      "TMK1": 0.36,
+      "Ocum1": 0.3
+    }
+  }
+}

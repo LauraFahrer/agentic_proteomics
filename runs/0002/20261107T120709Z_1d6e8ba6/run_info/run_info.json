@@ -1,0 +1,13 @@
+{
+  "run_id": "20261107T120709Z_1d6e8ba6",
+  "status": "executed",
+  "prompt_id": "0002",
+  "dataset_id": "PXD048538",
+  "dataset_version": "e60b9e9aa4c8",
+  "dataset_url": "https://browse.quantms.org/quantms/datasets/PXD048538/e60b9e9aa4c8/",
+  "focus": "biological process and pathway analysis (pathway landscape, GSEA enrichment, pathway-level hypotheses)",
+  "publication": "Hu C et al. Mol Oncol 2024;18(6):1437-1459. doi:10.1002/1878-0261.13654 (PMC11161736)",
+  "companion_run": "runs/0001/20261105T121500Z_22794b7b (prompt_0001; subtyping, cell identity, EBV)",
+  "agent": "Claude Code (autonomous research run)",
+  "notes": "Input data not committed; fetched by scripts/00_download.sh (also used by run 0001). Gene sets: MSigDB Hallmark 2023.1, KEGG/Reactome/GO 7.5.1 (GitHub mirrors)."
+}
