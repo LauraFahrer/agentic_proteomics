@@ -1,0 +1,11 @@
+{
+  "genes_complete": 4002,
+  "gocc_complex_terms_used": 287,
+  "within_complex_pairs": 39154,
+  "within_complex_median_bicor": 0.15562818711237303,
+  "random_pairs_median_bicor": 0.021139568030625215,
+  "coabundance_AUC_complex_vs_random": 0.61345,
+  "mannwhitney_p": 0.0,
+  "baseline_complex_pair_fraction": 0.0048905814525878775,
+  "precision_at_bicor_0.9": 0.2234891676168757
+}
