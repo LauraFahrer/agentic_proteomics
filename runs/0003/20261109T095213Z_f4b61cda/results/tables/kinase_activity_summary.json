@@ -1,0 +1,206 @@
+{
+  "EMT_vs_Metabolism_ST": {
+    "kinases_scored": 303,
+    "q<0.1": 36,
+    "up_g1_byKS": [
+      "AKT3",
+      "AKT2",
+      "MYO3B",
+      "SGK1",
+      "AKT1",
+      "PKCI",
+      "CAMK1D",
+      "SGK3",
+      "PKR",
+      "TNIK",
+      "PKCT",
+      "RSK3"
+    ],
+    "up_g2_byKS": [
+      "MEK5",
+      "ZAK",
+      "GCK",
+      "MEKK2",
+      "YSK1",
+      "NEK8",
+      "KHS1",
+      "KHS2",
+      "QIK",
+      "MST3",
+      "PKCD",
+      "MEK2"
+    ],
+    "sig_up_g1": [
+      "AKT3",
+      "MYO3B",
+      "CAMK1D",
+      "PKR",
+      "RSK3",
+      "TTBK1",
+      "PAK5",
+      "P70S6K",
+      "CDK7",
+      "TLK2",
+      "CDK19",
+      "CDK10"
+    ],
+    "sig_up_g2": [
+      "ZAK",
+      "GCK",
+      "KHS1",
+      "KHS2",
+      "MAPKAPK3",
+      "NEK2",
+      "DLK",
+      "CAMKK1",
+      "MARK1",
+      "MARK3",
+      "BRSK2",
+      "SRPK1"
+    ]
+  },
+  "EMT_vs_Metabolism_Y": {
+    "kinases_scored": 93,
+    "q<0.1": 12,
+    "up_g1_byKS": [
+      "LCK",
+      "WEE1_TYR"
+    ],
+    "up_g2_byKS": [
+      "MET",
+      "TRKB",
+      "FGFR3",
+      "EPHB1",
+      "FGFR2",
+      "MST1R",
+      "JAK3",
+      "EPHA3",
+      "EPHA8",
+      "HER2",
+      "EPHB3",
+      "CSFR"
+    ],
+    "sig_up_g1": [
+      "LCK",
+      "WEE1_TYR"
+    ],
+    "sig_up_g2": [
+      "MET",
+      "FGFR3",
+      "FGFR2",
+      "MST1R",
+      "JAK3",
+      "DDR2",
+      "FAK",
+      "VEGFR1",
+      "IRR",
+      "FER"
+    ]
+  },
+  "EBV_vs_nonEBV_ST": {
+    "kinases_scored": 303,
+    "q<0.1": 30,
+    "up_g1_byKS": [
+      "YSK1",
+      "PKCG",
+      "MEK2",
+      "PKCH",
+      "MEK5",
+      "MEKK2",
+      "QIK",
+      "SMMLCK",
+      "RIPK2",
+      "PKCT",
+      "PKCI",
+      "NEK8"
+    ],
+    "up_g2_byKS": [
+      "AKT3",
+      "AKT1",
+      "PKN2",
+      "SGK3",
+      "SGK1",
+      "PKN3",
+      "PKCD",
+      "CAMK1D",
+      "TAO3",
+      "MYO3B",
+      "ASK1",
+      "P90RSK"
+    ],
+    "sig_up_g1": [
+      "MEK2",
+      "QIK",
+      "RIPK2",
+      "CLK4",
+      "SRPK1",
+      "HIPK1",
+      "HIPK2",
+      "SRPK3",
+      "PDHK1",
+      "MARK3",
+      "DYRK3",
+      "CLK2"
+    ],
+    "sig_up_g2": [
+      "AKT3",
+      "PKN3",
+      "CAMK1D",
+      "NEK7",
+      "PLK1",
+      "P38A",
+      "ERK5",
+      "CDK3",
+      "CDK6",
+      "P38D",
+      "MTOR"
+    ]
+  },
+  "EBV_vs_nonEBV_Y": {
+    "kinases_scored": 93,
+    "q<0.1": 25,
+    "up_g1_byKS": [
+      "EPHB1",
+      "SRMS",
+      "FER",
+      "EPHA8",
+      "FES",
+      "TEC",
+      "TRKC",
+      "FYN",
+      "FGFR4",
+      "TRKA",
+      "LYN",
+      "EPHA7"
+    ],
+    "up_g2_byKS": [
+      "PINK1_TYR",
+      "LIMK1_TYR",
+      "LIMK2_TYR",
+      "PDGFRA",
+      "TESK1_TYR",
+      "TNK1"
+    ],
+    "sig_up_g1": [
+      "EPHB1",
+      "SRMS",
+      "FER",
+      "FES",
+      "TEC",
+      "TRKC",
+      "FYN",
+      "FGFR4",
+      "CSK",
+      "BLK",
+      "SRC",
+      "EPHA1"
+    ],
+    "sig_up_g2": [
+      "PINK1_TYR",
+      "LIMK1_TYR",
+      "LIMK2_TYR",
+      "PDGFRA",
+      "TNK1"
+    ]
+  }
+}

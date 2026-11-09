@@ -1,0 +1,112 @@
+{
+  "EMT_vs_Metabolism": {
+    "PP_tested": 8452,
+    "PP_q<0.05": 20,
+    "PP_protnorm_q<0.05": 0,
+    "YP_tested": 4780,
+    "YP_q<0.05": 25,
+    "seqrnk_ST": 8146,
+    "seqrnk_Y": 4937,
+    "PP_top_up_g1": [
+      "FXR1_S406",
+      "ALS2_S492",
+      "ALS2_S483",
+      "PHLDB2_S489",
+      "FGD4_S702",
+      "Noname_S91",
+      "ABCC1_S915",
+      "FRK_S37",
+      "KALRN_S1799",
+      "PPFIBP2_S329",
+      "TRIM2_S424",
+      "CADPS2_S58"
+    ],
+    "PP_top_up_g2": [
+      "FUBP1_Y626",
+      "KIF13B_S1381",
+      "LMO7_S1252",
+      "ITGB4_S1364",
+      "NEDD4L_T302",
+      "ITGB4_T1524",
+      "TRIM2_S428",
+      "CADPS2_S56",
+      "CADPS2_S58",
+      "TRIM2_S424",
+      "PPFIBP2_S329",
+      "KALRN_S1799"
+    ],
+    "YP_top_up_g1": [
+      "BCAR1_Y385",
+      "ACTN1_Y193",
+      "H3C15_Y42",
+      "LMO7_Y418",
+      "NOS1AP_Y109",
+      "ESYT2_Y231",
+      "NCK1_Y112",
+      "GAREM1_Y74",
+      "LAMP1_Y414",
+      "ACSL5_Y96"
+    ],
+    "YP_top_up_g2": [
+      "ITGB4_Y1207",
+      "ANO1_Y7",
+      "DBI_Y29",
+      "POF1B_Y84",
+      "TMC5_Y110",
+      "G6PD_Y401",
+      "CLDN2_Y198",
+      "POF1B_Y166",
+      "ATP8B1_Y1217",
+      "EPS8_Y774"
+    ]
+  },
+  "EBV_vs_nonEBV": {
+    "PP_tested": 8452,
+    "PP_q<0.05": 6,
+    "PP_protnorm_q<0.05": 9,
+    "YP_tested": 4780,
+    "YP_q<0.05": 5,
+    "seqrnk_ST": 8146,
+    "seqrnk_Y": 4937,
+    "PP_top_up_g1": [
+      "SLC4A4_S1069",
+      "CBX5_S12",
+      "CBX5_S11",
+      "CBX5_S14",
+      "CBX5_S13",
+      "MMTAG2_T219"
+    ],
+    "PP_top_up_g2": [
+      "MMTAG2_T219",
+      "CBX5_S13",
+      "CBX5_S14",
+      "CBX5_S11",
+      "CBX5_S12",
+      "SLC4A4_S1069"
+    ],
+    "YP_top_up_g1": [
+      "PLEKHS1_Y209",
+      "SLITRK6_Y820",
+      "CLDN2_Y195",
+      "PPP1R2_Y148",
+      "CTDSP1_Y77",
+      "PLEKHS1_Y248",
+      "PKP4_Y425",
+      "SPRY1_Y89",
+      "CA12_Y331",
+      "EIF4ENIF1_Y405"
+    ],
+    "YP_top_up_g2": [
+      "MAPK12_Y175",
+      "CHN2_Y31",
+      "ABCF1_Y250",
+      "GOT1_Y264",
+      "SRC_Y216",
+      "SYTL1_Y296",
+      "EIF4ENIF1_Y405",
+      "CA12_Y331",
+      "SPRY1_Y89",
+      "PKP4_Y425"
+    ]
+  }
+}
