@@ -1,0 +1,11 @@
+{
+  "n_hypotheses_registered": 12,
+  "n_prioritised": 5,
+  "status_counts": {
+    "supported": 7,
+    "supported (methodological)": 2,
+    "partly rejected": 1,
+    "weak/insufficient": 1,
+    "weak/candidate": 1
+  }
+}
