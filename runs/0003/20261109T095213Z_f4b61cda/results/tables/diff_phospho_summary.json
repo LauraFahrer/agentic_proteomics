@@ -36,26 +36,26 @@
       "KALRN_S1799"
     ],
     "YP_top_up_g1": [
-      "P56945-5_Y385",
-      "P12814-2_Y193",
+      "BCAR1_Y385",
+      "ACTN1_Y193",
       "H3C15_Y42",
-      "Q8WWI1-3_Y418",
-      "O75052-3_Y109",
-      "A0FGR8-5_Y231",
+      "LMO7_Y418",
+      "NOS1AP_Y109",
+      "ESYT2_Y231",
       "NCK1_Y112",
-      "Q9H706-3_Y74",
+      "GAREM1_Y74",
       "LAMP1_Y414",
-      "Q9ULC5-4_Y96"
+      "ACSL5_Y96"
     ],
     "YP_top_up_g2": [
-      "P16144-4_Y1207",
+      "ITGB4_Y1207",
       "ANO1_Y7",
       "DBI_Y29",
-      "Q8WVV4-1_Y84",
-      "Q6UXY8-2_Y110",
+      "POF1B_Y84",
+      "TMC5_Y110",
       "G6PD_Y401",
       "CLDN2_Y198",
-      "Q8WVV4-1_Y166",
+      "POF1B_Y166",
       "ATP8B1_Y1217",
       "EPS8_Y774"
     ]
@@ -89,22 +89,22 @@
       "SLITRK6_Y820",
       "CLDN2_Y195",
       "PPP1R2_Y148",
-      "Q9GZU7-3_Y77",
+      "CTDSP1_Y77",
       "PLEKHS1_Y248",
       "PKP4_Y425",
       "SPRY1_Y89",
-      "O43570-2_Y331",
-      "Q9NRA8-2_Y405"
+      "CA12_Y331",
+      "EIF4ENIF1_Y405"
     ],
     "YP_top_up_g2": [
-      "P53778-2_Y175",
+      "MAPK12_Y175",
       "CHN2_Y31",
       "ABCF1_Y250",
       "GOT1_Y264",
       "SRC_Y216",
-      "Q8IYJ3-2_Y296",
-      "Q9NRA8-2_Y405",
-      "O43570-2_Y331",
+      "SYTL1_Y296",
+      "EIF4ENIF1_Y405",
+      "CA12_Y331",
       "SPRY1_Y89",
       "PKP4_Y425"
     ]

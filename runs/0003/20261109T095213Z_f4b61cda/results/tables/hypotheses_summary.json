@@ -1,0 +1,55 @@
+{
+  "H1_sig_pY_sites": 25,
+  "H1_sig_pY_all_higher_in_Metabolism": true,
+  "H1_adaptor_module_sites": [
+    "SHB_Y96",
+    "ITGB4_Y1207",
+    "RASA1_Y438",
+    "ITGB4_Y920",
+    "SHC1_Y213",
+    "EPHB2_Y780",
+    "SASH1_Y766",
+    "SDCBP_Y90",
+    "PEBP1_Y181",
+    "GAREM1_Y453"
+  ],
+  "H1_RTK_activity_higher_in_Metab_FDR": {
+    "MET": 0.039,
+    "FGFR2": 0.039,
+    "FGFR3": 0.039,
+    "MST1R": 0.039,
+    "EPHB1": 0.116,
+    "EPHA3": 0.169,
+    "EPHB3": 0.247,
+    "EPHA8": 0.44,
+    "HER2": 0.232,
+    "TRKB": 0.116,
+    "TRKA": 0.247,
+    "JAK3": 0.039,
+    "DDR2": 0.039,
+    "CSFR": 0.116
+  },
+  "H2_AGC_higher_in_EMT_KS": {
+    "AKT1": 0.61641,
+    "AKT2": 0.72761,
+    "AKT3": 0.83259,
+    "SGK1": 0.61887,
+    "SGK3": 0.58497,
+    "P70S6K": 0.35664,
+    "RSK3": 0.45036,
+    "P90RSK": 0.39156
+  },
+  "H2_MAPK_higher_in_Metab_KS": {
+    "MEK5": -0.80534,
+    "MEK2": -0.49615,
+    "MEK1": -0.33799,
+    "ZAK": -0.60988,
+    "MEKK2": -0.59578,
+    "KHS1": -0.55831,
+    "KHS2": -0.53996,
+    "GCK": -0.59841
+  },
+  "H3_PP_q<0.05_raw": 20,
+  "H3_PP_q<0.05_protnorm": 0,
+  "H3_YP_q<0.05": 25
+}
