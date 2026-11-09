@@ -1,0 +1,12 @@
+{
+  "run_id": "20261109T145940Z_51591012",
+  "status": "executed",
+  "prompt_id": "0005",
+  "type": "synthesis / meta-analysis of runs 0001-0004",
+  "dataset_id": "PXD048538",
+  "dataset_version": "e60b9e9aa4c8",
+  "integrates": ["runs/0001 (subtyping/EBV)", "runs/0002 (pathways)", "runs/0003 (signaling/PTM)", "runs/0004 (PPI/complexes)"],
+  "key_caveat": "All four runs use ONE dataset (14 lines); cross-method convergence is internal consistency, NOT independent experimental validation.",
+  "publication": "Hu C et al. Mol Oncol 2024;18(6):1437-1459. doi:10.1002/1878-0261.13654 (PMC11161736)",
+  "agent": "Claude Code (autonomous research run)"
+}

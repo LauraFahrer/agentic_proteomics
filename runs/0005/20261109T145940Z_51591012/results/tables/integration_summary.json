@@ -1,0 +1,46 @@
+{
+  "axis_subtype": [
+    {
+      "axis": "GI-lineage TF (HNF1A/4A/FOXA2) [r1]",
+      "EMT_minus_Metab": -1.668,
+      "welch_p": 0.0
+    },
+    {
+      "axis": "Oxidative metabolism (OXPHOS+FAO) [r2,r4]",
+      "EMT_minus_Metab": -0.576,
+      "welch_p": 0.002
+    },
+    {
+      "axis": "Glutathione/antioxidant detox [r2]",
+      "EMT_minus_Metab": -0.735,
+      "welch_p": 0.006
+    },
+    {
+      "axis": "Cytoplasmic translation/ribosome [r2,r3]",
+      "EMT_minus_Metab": 0.751,
+      "welch_p": 0.015
+    },
+    {
+      "axis": "RTK-adaptor pY module (EPHB2/SHC1/RASA1) [r3]",
+      "EMT_minus_Metab": -0.462,
+      "welch_p": 0.071
+    },
+    {
+      "axis": "OXPHOS complexes (resp chain/cytochrome) [r4]",
+      "EMT_minus_Metab": -0.553,
+      "welch_p": 0.042
+    },
+    {
+      "axis": "MYC targets / proliferation [r2,r3]",
+      "EMT_minus_Metab": 0.271,
+      "welch_p": 0.136
+    },
+    {
+      "axis": "Proteostasis / UPR [r2,r3]",
+      "EMT_minus_Metab": 0.197,
+      "welch_p": 0.173
+    }
+  ],
+  "mean_r_within_metabolic_axes": 0.6634095055510073,
+  "mean_r_metabolic_vs_proliferation": -0.23578941876092016
+}
