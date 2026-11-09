@@ -1,0 +1,112 @@
+{
+  "EMT_vs_Metabolism": {
+    "PP_tested": 8452,
+    "PP_q<0.05": 20,
+    "PP_protnorm_q<0.05": 0,
+    "YP_tested": 4780,
+    "YP_q<0.05": 25,
+    "seqrnk_ST": 8146,
+    "seqrnk_Y": 4937,
+    "PP_top_up_g1": [
+      "FXR1_S406",
+      "ALS2_S492",
+      "ALS2_S483",
+      "PHLDB2_S489",
+      "FGD4_S702",
+      "Noname_S91",
+      "ABCC1_S915",
+      "FRK_S37",
+      "KALRN_S1799",
+      "PPFIBP2_S329",
+      "TRIM2_S424",
+      "CADPS2_S58"
+    ],
+    "PP_top_up_g2": [
+      "FUBP1_Y626",
+      "KIF13B_S1381",
+      "LMO7_S1252",
+      "ITGB4_S1364",
+      "NEDD4L_T302",
+      "ITGB4_T1524",
+      "TRIM2_S428",
+      "CADPS2_S56",
+      "CADPS2_S58",
+      "TRIM2_S424",
+      "PPFIBP2_S329",
+      "KALRN_S1799"
+    ],
+    "YP_top_up_g1": [
+      "P56945-5_Y385",
+      "P12814-2_Y193",
+      "H3C15_Y42",
+      "Q8WWI1-3_Y418",
+      "O75052-3_Y109",
+      "A0FGR8-5_Y231",
+      "NCK1_Y112",
+      "Q9H706-3_Y74",
+      "LAMP1_Y414",
+      "Q9ULC5-4_Y96"
+    ],
+    "YP_top_up_g2": [
+      "P16144-4_Y1207",
+      "ANO1_Y7",
+      "DBI_Y29",
+      "Q8WVV4-1_Y84",
+      "Q6UXY8-2_Y110",
+      "G6PD_Y401",
+      "CLDN2_Y198",
+      "Q8WVV4-1_Y166",
+      "ATP8B1_Y1217",
+      "EPS8_Y774"
+    ]
+  },
+  "EBV_vs_nonEBV": {
+    "PP_tested": 8452,
+    "PP_q<0.05": 6,
+    "PP_protnorm_q<0.05": 9,
+    "YP_tested": 4780,
+    "YP_q<0.05": 5,
+    "seqrnk_ST": 8146,
+    "seqrnk_Y": 4937,
+    "PP_top_up_g1": [
+      "SLC4A4_S1069",
+      "CBX5_S12",
+      "CBX5_S11",
+      "CBX5_S14",
+      "CBX5_S13",
+      "MMTAG2_T219"
+    ],
+    "PP_top_up_g2": [
+      "MMTAG2_T219",
+      "CBX5_S13",
+      "CBX5_S14",
+      "CBX5_S11",
+      "CBX5_S12",
+      "SLC4A4_S1069"
+    ],
+    "YP_top_up_g1": [
+      "PLEKHS1_Y209",
+      "SLITRK6_Y820",
+      "CLDN2_Y195",
+      "PPP1R2_Y148",
+      "Q9GZU7-3_Y77",
+      "PLEKHS1_Y248",
+      "PKP4_Y425",
+      "SPRY1_Y89",
+      "O43570-2_Y331",
+      "Q9NRA8-2_Y405"
+    ],
+    "YP_top_up_g2": [
+      "P53778-2_Y175",
+      "CHN2_Y31",
+      "ABCF1_Y250",
+      "GOT1_Y264",
+      "SRC_Y216",
+      "Q8IYJ3-2_Y296",
+      "Q9NRA8-2_Y405",
+      "O43570-2_Y331",
+      "SPRY1_Y89",
+      "PKP4_Y425"
+    ]
+  }
+}

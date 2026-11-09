@@ -1,0 +1,12 @@
+{
+  "PP_sites": 8452,
+  "PP_sites_window_ok": 8024,
+  "PP_restype": {
+    "S": 7406,
+    "T": 887,
+    "Y": 159
+  },
+  "YP_sites": 4780,
+  "YP_window_ok": 4780,
+  "PP_sites_protein_normalisable": 5731
+}
