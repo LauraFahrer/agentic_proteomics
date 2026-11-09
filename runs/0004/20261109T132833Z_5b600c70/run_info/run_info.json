@@ -1,0 +1,12 @@
+{
+  "run_id": "20261109T132833Z_5b600c70",
+  "status": "executed",
+  "prompt_id": "0004",
+  "dataset_id": "PXD048538",
+  "dataset_version": "e60b9e9aa4c8",
+  "focus": "protein-protein interaction / complex inference from co-abundance patterns across the 14 cell lines",
+  "references": "benchmark = GO-CC complex terms (MSigDB c5.go.cc); STRING REST API (PPI evidence); ComplexPortal API (EBI, spot checks)",
+  "publication": "Hu C et al. Mol Oncol 2024;18(6):1437-1459. doi:10.1002/1878-0261.13654 (PMC11161736)",
+  "companion_runs": "runs/0001 (subtyping/EBV), runs/0002 (pathways), runs/0003 (signaling/PTM)",
+  "agent": "Claude Code (autonomous research run)"
+}
