@@ -1,0 +1,43 @@
+sample,cell_line_sdrf,disease_sdrf,bio_rep,raw_file,run,line,sdrf_name,histology_s1,ebv,msi,alterations_s1,paper_subtype,sample_id
+PXD048538-Sample-1,AGS,Gastric adenocarcinoma,1,Gastric_WP_DIA_AGS_R1.raw,Gastric_WP_DIA_AGS_R1,AGS,AGS,Poorly differentiated,neg,MSS,PIK3CA E453K/E545A; KRAS G12D; CTNNB1 G34E,EMT,AGS_R1
+PXD048538-Sample-2,AGS,Gastric adenocarcinoma,2,Gastric_WP_DIA_AGS_R2.raw,Gastric_WP_DIA_AGS_R2,AGS,AGS,Poorly differentiated,neg,MSS,PIK3CA E453K/E545A; KRAS G12D; CTNNB1 G34E,EMT,AGS_R2
+PXD048538-Sample-3,AGS,Gastric adenocarcinoma,3,Gastric_WP_DIA_AGS_R3.raw,Gastric_WP_DIA_AGS_R3,AGS,AGS,Poorly differentiated,neg,MSS,PIK3CA E453K/E545A; KRAS G12D; CTNNB1 G34E,EMT,AGS_R3
+PXD048538-Sample-4,AGS-EBV (eAGS),Gastric adenocarcinoma,1,Gastric_WP_DIA_eAGS_R1.raw,Gastric_WP_DIA_eAGS_R1,eAGS,AGS-EBV (eAGS),Poorly differentiated,acquired,NA,AGS + in-vitro EBV infection,EMT,eAGS_R1
+PXD048538-Sample-5,AGS-EBV (eAGS),Gastric adenocarcinoma,2,Gastric_WP_DIA_eAGS_R2.raw,Gastric_WP_DIA_eAGS_R2,eAGS,AGS-EBV (eAGS),Poorly differentiated,acquired,NA,AGS + in-vitro EBV infection,EMT,eAGS_R2
+PXD048538-Sample-6,AGS-EBV (eAGS),Gastric adenocarcinoma,3,Gastric_WP_DIA_eAGS_R3.raw,Gastric_WP_DIA_eAGS_R3,eAGS,AGS-EBV (eAGS),Poorly differentiated,acquired,NA,AGS + in-vitro EBV infection,EMT,eAGS_R3
+PXD048538-Sample-37,AZ-521,Duodenal adenocarcinoma,1,Gastric_WP_DIA_AZ521_R1.raw,Gastric_WP_DIA_AZ521_R1,AZ521,AZ-521,Duodenal adenocarcinoma,neg,NA,CTNNB1 S37F,EMT,AZ521_R1
+PXD048538-Sample-38,AZ-521,Duodenal adenocarcinoma,2,Gastric_WP_DIA_AZ521_R2.raw,Gastric_WP_DIA_AZ521_R2,AZ521,AZ-521,Duodenal adenocarcinoma,neg,NA,CTNNB1 S37F,EMT,AZ521_R2
+PXD048538-Sample-39,AZ-521,Duodenal adenocarcinoma,3,Gastric_WP_DIA_AZ521_R3.raw,Gastric_WP_DIA_AZ521_R3,AZ521,AZ-521,Duodenal adenocarcinoma,neg,NA,CTNNB1 S37F,EMT,AZ521_R3
+PXD048538-Sample-13,MKN28,Gastric tubular adenocarcinoma,1,Gastric_WP_DIA_MKN28_R1.raw,Gastric_WP_DIA_MKN28_R1,MKN28,MKN28,Well differentiated,neg,MSS,RASA1 L761fs; APC R1450*; TP53 I251L,EMT,MKN28_R1
+PXD048538-Sample-14,MKN28,Gastric tubular adenocarcinoma,2,Gastric_WP_DIA_MKN28_R2.raw,Gastric_WP_DIA_MKN28_R2,MKN28,MKN28,Well differentiated,neg,MSS,RASA1 L761fs; APC R1450*; TP53 I251L,EMT,MKN28_R2
+PXD048538-Sample-15,MKN28,Gastric tubular adenocarcinoma,3,Gastric_WP_DIA_MKN28_R3.raw,Gastric_WP_DIA_MKN28_R3,MKN28,MKN28,Well differentiated,neg,MSS,RASA1 L761fs; APC R1450*; TP53 I251L,EMT,MKN28_R3
+PXD048538-Sample-40,NCI-N87,Gastric tubular adenocarcinoma,1,Gastric_WP_DIA_N87_R1.raw,Gastric_WP_DIA_N87_R1,N87,NCI-N87,Well differentiated,neg,MSS,ERBB2 amp; TP53 R248Q; ELF3 S308fs,EMT,N87_R1
+PXD048538-Sample-41,NCI-N87,Gastric tubular adenocarcinoma,2,Gastric_WP_DIA_N87_R2.raw,Gastric_WP_DIA_N87_R2,N87,NCI-N87,Well differentiated,neg,MSS,ERBB2 amp; TP53 R248Q; ELF3 S308fs,EMT,N87_R2
+PXD048538-Sample-42,NCI-N87,Gastric tubular adenocarcinoma,3,Gastric_WP_DIA_N87_R3.raw,Gastric_WP_DIA_N87_R3,N87,NCI-N87,Well differentiated,neg,MSS,ERBB2 amp; TP53 R248Q; ELF3 S308fs,EMT,N87_R3
+PXD048538-Sample-22,SNU-1750,Gastric tubular adenocarcinoma,1,Gastric_WP_DIA_SNU1750_R1.raw,Gastric_WP_DIA_SNU1750_R1,SNU1750,SNU-1750,Poorly differentiated,neg,MSS,TP53 R273P,EMT,SNU1750_R1
+PXD048538-Sample-23,SNU-1750,Gastric tubular adenocarcinoma,2,Gastric_WP_DIA_SNU1750_R2.raw,Gastric_WP_DIA_SNU1750_R2,SNU1750,SNU-1750,Poorly differentiated,neg,MSS,TP53 R273P,EMT,SNU1750_R2
+PXD048538-Sample-24,SNU-1750,Gastric tubular adenocarcinoma,3,Gastric_WP_DIA_SNU1750_R3.raw,Gastric_WP_DIA_SNU1750_R3,SNU1750,SNU-1750,Poorly differentiated,neg,MSS,TP53 R273P,EMT,SNU1750_R3
+PXD048538-Sample-7,TMK-1,Gastric adenocarcinoma,1,Gastric_WP_DIA_TMK1_R1.raw,Gastric_WP_DIA_TMK1_R1,TMK1,TMK-1,Poorly differentiated,neg,MSS,TP53 V173M,EMT,TMK1_R1
+PXD048538-Sample-8,TMK-1,Gastric adenocarcinoma,2,Gastric_WP_DIA_TMK1_R2.raw,Gastric_WP_DIA_TMK1_R2,TMK1,TMK-1,Poorly differentiated,neg,MSS,TP53 V173M,EMT,TMK1_R2
+PXD048538-Sample-9,TMK-1,Gastric adenocarcinoma,3,Gastric_WP_DIA_TMK1_R3.raw,Gastric_WP_DIA_TMK1_R3,TMK1,TMK-1,Poorly differentiated,neg,MSS,TP53 V173M,EMT,TMK1_R3
+PXD048538-Sample-10,KATO III,Gastric signet ring cell adenocarcinoma,1,Gastric_WP_DIA_KatoIII_R1.raw,Gastric_WP_DIA_KatoIII_R1,KatoIII,KATO III,Signet ring cell,neg,MSS,FGFR2 amp; NOTCH1 W2532*,Metabolism,KatoIII_R1
+PXD048538-Sample-11,KATO III,Gastric signet ring cell adenocarcinoma,2,Gastric_WP_DIA_KatoIII_R2.raw,Gastric_WP_DIA_KatoIII_R2,KatoIII,KATO III,Signet ring cell,neg,MSS,FGFR2 amp; NOTCH1 W2532*,Metabolism,KatoIII_R2
+PXD048538-Sample-12,KATO III,Gastric signet ring cell adenocarcinoma,3,Gastric_WP_DIA_KatoIII_R3.raw,Gastric_WP_DIA_KatoIII_R3,KatoIII,KATO III,Signet ring cell,neg,MSS,FGFR2 amp; NOTCH1 W2532*,Metabolism,KatoIII_R3
+PXD048538-Sample-28,SNU-NCC-24,Gastric signet ring cell adenocarcinoma,1,Gastric_WP_DIA_NCC24_R1.raw,Gastric_WP_DIA_NCC24_R1,NCC24,SNU-NCC-24,Signet ring cell,pos,MSS,TP53 G266R/R273H,Metabolism,NCC24_R1
+PXD048538-Sample-29,SNU-NCC-24,Gastric signet ring cell adenocarcinoma,2,Gastric_WP_DIA_NCC24_R2.raw,Gastric_WP_DIA_NCC24_R2,NCC24,SNU-NCC-24,Signet ring cell,pos,MSS,TP53 G266R/R273H,Metabolism,NCC24_R2
+PXD048538-Sample-30,SNU-NCC-24,Gastric signet ring cell adenocarcinoma,3,Gastric_WP_DIA_NCC24_R3.raw,Gastric_WP_DIA_NCC24_R3,NCC24,SNU-NCC-24,Signet ring cell,pos,MSS,TP53 G266R/R273H,Metabolism,NCC24_R3
+PXD048538-Sample-25,OCUM-1,Gastric signet ring cell adenocarcinoma,1,Gastric_WP_DIA_Ocum1_R1.raw,Gastric_WP_DIA_Ocum1_R1,Ocum1,OCUM-1,Signet ring cell,neg,MSI-low,TGFBR2 R537C; CTNNB1 S45C; MAP2K1 Q56P,Metabolism,Ocum1_R1
+PXD048538-Sample-26,OCUM-1,Gastric signet ring cell adenocarcinoma,2,Gastric_WP_DIA_Ocum1_R2.raw,Gastric_WP_DIA_Ocum1_R2,Ocum1,OCUM-1,Signet ring cell,neg,MSI-low,TGFBR2 R537C; CTNNB1 S45C; MAP2K1 Q56P,Metabolism,Ocum1_R2
+PXD048538-Sample-27,OCUM-1,Gastric signet ring cell adenocarcinoma,3,Gastric_WP_DIA_Ocum1_R3.raw,Gastric_WP_DIA_Ocum1_R3,Ocum1,OCUM-1,Signet ring cell,neg,MSI-low,TGFBR2 R537C; CTNNB1 S45C; MAP2K1 Q56P,Metabolism,Ocum1_R3
+PXD048538-Sample-16,SNU-601,Gastric signet ring cell adenocarcinoma,1,Gastric_WP_DIA_SNU601_R1.raw,Gastric_WP_DIA_SNU601_R1,SNU601,SNU-601,Signet ring cell,neg,MSS,PIK3CA E542K; KRAS G12D; TP53 R273H; NF1 E2174*,Metabolism,SNU601_R1
+PXD048538-Sample-17,SNU-601,Gastric signet ring cell adenocarcinoma,2,Gastric_WP_DIA_SNU601_R2.raw,Gastric_WP_DIA_SNU601_R2,SNU601,SNU-601,Signet ring cell,neg,MSS,PIK3CA E542K; KRAS G12D; TP53 R273H; NF1 E2174*,Metabolism,SNU601_R2
+PXD048538-Sample-18,SNU-601,Gastric signet ring cell adenocarcinoma,3,Gastric_WP_DIA_SNU601_R3.raw,Gastric_WP_DIA_SNU601_R3,SNU601,SNU-601,Signet ring cell,neg,MSS,PIK3CA E542K; KRAS G12D; TP53 R273H; NF1 E2174*,Metabolism,SNU601_R3
+PXD048538-Sample-19,SNU-719,Gastric tubular adenocarcinoma,1,Gastric_WP_DIA_SNU719_R1.raw,Gastric_WP_DIA_SNU719_R1,SNU719,SNU-719,Well differentiated,pos,NA,NRAS Q61L; CTNNB1 G34V; PIK3CA P104R; RB1 R621S,Metabolism,SNU719_R1
+PXD048538-Sample-20,SNU-719,Gastric tubular adenocarcinoma,2,Gastric_WP_DIA_SNU719_R2.raw,Gastric_WP_DIA_SNU719_R2,SNU719,SNU-719,Well differentiated,pos,NA,NRAS Q61L; CTNNB1 G34V; PIK3CA P104R; RB1 R621S,Metabolism,SNU719_R2
+PXD048538-Sample-21,SNU-719,Gastric tubular adenocarcinoma,3,Gastric_WP_DIA_SNU719_R3.raw,Gastric_WP_DIA_SNU719_R3,SNU719,SNU-719,Well differentiated,pos,NA,NRAS Q61L; CTNNB1 G34V; PIK3CA P104R; RB1 R621S,Metabolism,SNU719_R3
+PXD048538-Sample-31,YCC-3,Gastric adenocarcinoma,1,Gastric_WP_DIA_YCC3_R1.raw,Gastric_WP_DIA_YCC3_R1,YCC3,YCC-3,NA,neg,NA,TP53 R175H,Metabolism,YCC3_R1
+PXD048538-Sample-32,YCC-3,Gastric adenocarcinoma,2,Gastric_WP_DIA_YCC3_R2.raw,Gastric_WP_DIA_YCC3_R2,YCC3,YCC-3,NA,neg,NA,TP53 R175H,Metabolism,YCC3_R2
+PXD048538-Sample-33,YCC-3,Gastric adenocarcinoma,3,Gastric_WP_DIA_YCC3_R3.raw,Gastric_WP_DIA_YCC3_R3,YCC3,YCC-3,NA,neg,NA,TP53 R175H,Metabolism,YCC3_R3
+PXD048538-Sample-34,YCCEL1,Gastric adenocarcinoma,1,Gastric_WP_DIA_YCCE1_R1.raw,Gastric_WP_DIA_YCCE1_R1,YCCEL1,YCCEL1,NA,pos,NA,-,Metabolism,YCCEL1_R1
+PXD048538-Sample-35,YCCEL1,Gastric adenocarcinoma,2,Gastric_WP_DIA_YCCE1_R2.raw,Gastric_WP_DIA_YCCE1_R2,YCCEL1,YCCEL1,NA,pos,NA,-,Metabolism,YCCEL1_R2
+PXD048538-Sample-36,YCCEL1,Gastric adenocarcinoma,3,Gastric_WP_DIA_YCCE1_R3.raw,Gastric_WP_DIA_YCCE1_R3,YCCEL1,YCCEL1,NA,pos,NA,-,Metabolism,YCCEL1_R3

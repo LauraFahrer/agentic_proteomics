@@ -5,3 +5,6 @@ src/
 
 # Large local analysis inputs (fetched by scripts/00_download.sh)
 runs/**/data_cache/
+
+# Large regenerable co-abundance matrix (run 0004); rebuild with 02_coabundance.py
+runs/**/coabundance_bicor.parquet

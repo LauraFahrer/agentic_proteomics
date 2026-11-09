@@ -1,0 +1,7 @@
+{
+  "n_modules": 31,
+  "genes_in_modules": 1986,
+  "modules_subtype_assoc_q<0.1": 0,
+  "strong_pairs_bicor>=0.9": 877,
+  "strong_pairs_novel_frac": 0.677309007981756
+}
