@@ -52,5 +52,6 @@
 | Step | Paper | Agent |
 | --- | --- | --- |
 | Data processing | - based on tools and R-packages<br>- e.g. MaxQuant, Spectronaut, proBatch, ... | - WP: self-written scripts using tools/packages like duckdb/numpy/...<br>- PP/YP: using processed data from paper supplementary |
-| Subtype classification | | - self-written: MAD, investigation of cluster stability (consensus matrix, hierarchical consensus clustering, bootstrap adjusted rand index)<br>- scikit-learn NMF, PCA |
+| Subtype classification | - pipeline: MAD, NMF, ConsensusClusterPlus, cophenetic, silhouette R | - self-written: MAD, investigation of cluster stability (consensus matrix, hierarchical consensus clustering, bootstrap adjusted rand index)<br>- scikit-learn NMF, PCA |
+| Functional annotation | - using established tools: WGCNA, GSEA, limma, PTM-SEA | - Gene Ontology MSigDB, KEGG, Reactome<br>- self-written: identification of co-expressed proteins, enrichment analysis, statistical anlysis
 | Kinase-activity analysis | - INKA, KSEA, MLR, mean-fold-difference | - phosX (Kinase Library Ser/Thr Johnson 2023 + Tyr Yaron-Barir 2024 PSSMs, open-source python tool) |
