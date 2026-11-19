@@ -1,0 +1,56 @@
+# Evaluation
+
+## Methods from Paper
+
+- 3 datasets:  Whole Proteome (WP), Phospho sites (PP), tyrosine-phospho sites (YP)
+- subtype classification:
+    - selection of variable (phospho-) proteins with MAD (Median Absolute Deviation)
+    - clustering with NMF (Non-negative Matrix Factorization)
+    - cluster analysis: Cophenetic Correlation (Stabilität der Clusterstruktur über Wiederholungen), Consensus Matrix (Stabilität der Gruppierung der Zelllinien), Silhouette Scores (Ähnlichkeit innerhalb und Diversität zwischen Gruppen)
+    - ConsensusClusterPlus (integration of all 3 datsets for evaluation of cluster consistency)
+- functional annotation:
+    - subcellular location: Gene Ontology Cellular Components
+    - identification of protein modules (differentially co-expressed proteins, Weighted Gene Co-expression Network Analysis, WGCNA package)
+    - GSEA (Gene Set Enrichment Analysis)
+    - Gene Ontology Analysis
+    - PTM-SEA (Post-Translational Modification Signature Enrichment Analysis) for PP dataset
+- signaling pathway analysis through kinase activity analysis:
+    - InKA (Integrated Kinase Activity Analysis) on YP dataset
+    - PP raw data and normalised, 3 methods: Mean Fold Difference, KSEA (Kinase-Set Enrichment Analysis), MLR (Multilinear Regression) -> 6 activity matrices -> identifying kinases with activity differences between subtypes (p < 0.05, Unterschied in Aktivität um Faktor 2)
+- ML-based subtype-prediction on real clinical patient data: using 42 proteins as features, 3 labels(EMT, Cell proliferation/EMT, Metabolism)
+
+## Results from Paper
+
+- identification of 6091 proteins, 16 685 unique phosphopeptides and 8705 phosphorylated Tyr sites across the panel
+- 3 distinct clusters (WP data) -> identification of 2 subtypes when considering protein modules and functional analysis (EMT/proliferation vs metabolism)
+- differential kinase activity:
+    - increased SFK activity in many cell lines -> growth inhibition through eCF506 inhibitor
+    - cell line dependend increased activity: ERBB2 in N87 (known), FGFR2 in KatoIII (known), CSNK1D/E in MKN28 (new)
+    - subtype specific increased activity: mTOR -> EMT, MAPK (MAP2K2) -> Metabolism
+    - EMT: sensitivity against mTOR inhibitors (Rapamycin), cells may activate AKT through an alternative signaling pathway that does not involve PI3K
+    - Metabolism: sensitivity against MEK inhibitors (Trametinib)
+
+## Results from Agentic Research
+
+- identification of 8152 protein groups at 1% FDR (quantms provenance: 9080 proteins; the paper’s own pipeline reported 6091), phospho layers from the paper’s supplement: 8452 PP sites + 4780 pY sites
+- 4 groups/clusters
+- EMT not mesenchymal at protein level (vimentin), differentially expressed transcription factors driving oxidative metabolism (HNF1A/HNF4A/FOXA2)
+- differential kinase activity:
+    - cell line dependend increased activity: ERBB2 in N87 (known), FGFR2 in KatoIII (known), CRKL in MKN28
+    - similar subtype specific increased activity as reported in the paper
+    - robust YP signaling but not for S/T after normalization
+    - differential expression of RTKs (receptor tyrosine kinase) between subtypes (not reported in paper)
+- mapping of known complexes and subtype-specific differences: (OXPHOS/TCA complexes up in Metabolism; transcription/ubiquitin complexes up in EMT)
+
+## Comparison and Evaluation
+
+- Paper mainly used established tools, software applications, packages and public databases like GSEA, Gene Ontology Resource and PTMsigDB
+- careful evaluation of clustering (ConsensusClusterPlus/cophenetic/silhouette R pipeline)
+- agentic research majority have been self-written scripts
+- differences in preprocessing of WP dataset -> different findings, using processed PP and YP data -> similar findings
+
+| Step | Paper | Agent |
+| --- | --- | --- |
+| Data processing | - based on tools and R-packages | - WP: self-written scripts using tools/packages like duckdb/numpy/... |
+| | - e.g. MaxQuant, Spectronaut, proBatch, ... | - PP/YP: using processed data from paper supplementary |
+
