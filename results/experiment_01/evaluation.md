@@ -44,10 +44,9 @@
 
 ## Comparison and Evaluation
 
-- Paper mainly used established tools, software applications, packages and public databases like GSEA, Gene Ontology Resource and PTMsigDB
-- careful evaluation of clustering (ConsensusClusterPlus/cophenetic/silhouette R pipeline)
-- agentic research majority have been self-written scripts
-- differences in preprocessing of WP dataset -> different findings, using processed PP and YP data -> similar findings
+- paper mainly used established tools, software applications, packages and public databases like GSEA, Gene Ontology Resource and PTMsigDB
+- agentic research also has used to a large extend self-written scripts
+- different processing of WP dataset -> different findings<br>using processed PP and YP data from paper -> similar findings
 
 | Step | Paper | Agent |
 | --- | --- | --- |
