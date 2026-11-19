@@ -51,6 +51,8 @@
 
 | Step | Paper | Agent |
 | --- | --- | --- |
-| Data processing | - based on tools and R-packages | - WP: self-written scripts using tools/packages like duckdb/numpy/... |
+| Data processing | - based on tools and R-packages | - WP: self-written scripts using tools/packages like duckdb/numpy/...<br>- PP/YP: using processed data from paper supplementary |
 | | - e.g. MaxQuant, Spectronaut, proBatch, ... | - PP/YP: using processed data from paper supplementary |
-
+| Subtype classification | | - self-written: MAD, investigation of cluster stability (consensus matrix, hierarchical consensus clustering, bootstrap adjusted rand index) |
+| | | - scikit-learn NMF, PCA |
+| Kinase-activity analysis | - INKA, KSEA, MLR, mean-fold-difference | - phosX (Kinase Library Ser/Thr Johnson 2023 + Tyr Yaron-Barir 2024 PSSMs, open-source python tool) |
