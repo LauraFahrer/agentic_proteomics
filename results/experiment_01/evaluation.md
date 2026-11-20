@@ -4,6 +4,7 @@
 
 - 3 datasets:  Whole Proteome (WP), Phospho sites (PP), tyrosine-phospho sites (YP)
 - subtype classification:
+    - all 3 datasets, first seperate then integrative clustering
     - selection of variable (phospho-) proteins with MAD (Median Absolute Deviation)
     - clustering with NMF (Non-negative Matrix Factorization)
     - cluster analysis: Cophenetic Correlation (Stabilität der Clusterstruktur über Wiederholungen), Consensus Matrix (Stabilität der Gruppierung der Zelllinien), Silhouette Scores (Ähnlichkeit innerhalb und Diversität zwischen Gruppen)
@@ -32,8 +33,9 @@
 
 ## Results from Agentic Research
 
+- no independence analysis but using paper as reference and rebuild the workflow from the paper (e.g. used same MAD thresholds as in paper)
 - identification of 8152 protein groups at 1% FDR (quantms provenance: 9080 proteins; the paper’s own pipeline reported 6091), phospho layers from the paper’s supplement: 8452 PP sites + 4780 pY sites
-- 4 groups/clusters
+- reproducing EMT/Metabolism subtypes for 13 of 14 celllines (except TMK1 -> agent labeled it as Metabolism)
 - EMT not mesenchymal at protein level (vimentin), differentially expressed transcription factors driving oxidative metabolism (HNF1A/HNF4A/FOXA2)
 - differential kinase activity:
     - cell line dependend increased activity: ERBB2 in N87 (known), FGFR2 in KatoIII (known), CRKL in MKN28
