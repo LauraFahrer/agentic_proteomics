@@ -36,7 +36,7 @@
 - no independence analysis but using paper as reference and rebuild the workflow from the paper (e.g. used same MAD thresholds as in paper)
 - identification of 8152 protein groups at 1% FDR (quantms provenance: 9080 proteins; the paper’s own pipeline reported 6091), phospho layers from the paper’s supplement: 8452 PP sites + 4780 pY sites
 - reproducing EMT/Metabolism subtypes for 13 of 14 celllines (except TMK1 -> agent labeled it as Metabolism)
-- EMT not mesenchymal at protein level (vimentin), differentially expressed transcription factors driving oxidative metabolism (HNF1A/HNF4A/FOXA2)
+- EMT not mesenchymal at protein level (vimentin, but specificity is controversial), differentially expressed transcription factors driving oxidative metabolism (HNF1A/HNF4A/FOXA2)
 - most stable structure with four groups (one (naturally) EBV-driven -> distinct proteome module)
 - differential kinase activity:
     - cell line dependend increased activity: ERBB2 in N87 (known), FGFR2 in KatoIII (known), CRKL in MKN28
