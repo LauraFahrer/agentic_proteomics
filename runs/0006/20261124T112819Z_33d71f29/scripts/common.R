@@ -24,12 +24,18 @@ PAPER_WP <- c(AGS = 1, eAGS = 1, MKN28 = 1, N87 = 1,
 PAPER_PP <- c(AGS = 1, AZ521 = 1, eAGS = 1, MKN28 = 1, N87 = 1, SNU1750 = 1, TMK1 = 1,
               KatoIII = 2, NCC24 = 2, Ocum1 = 2, SNU601 = 2, SNU719 = 2, YCC3 = 2, YCCEL1 = 2)
 PAPER_INT <- ifelse(PAPER_PP == 1, "EMT", "Metabolism")
-# YP (sample order of Fig. S4g; Fig. 4C differs for Ocum1_r1 -> treated as approximate)
+# YP (Fig. 4C / S4g; Ocum1 replicates split, handled at sample level in paper_label())
 PAPER_YP <- c(AGS = 1, AZ521 = 1, MKN28 = 1, SNU1750 = 1, TMK1 = 1, YCC3 = 1,
               KatoIII = 2, N87 = 2,
               eAGS = 3, NCC24 = 3, Ocum1 = 3, SNU601 = 3, SNU719 = 3, YCCEL1 = 3)
 
 line_of <- function(s) sub("_r[0-9]+$", "", s)
+# sample-level paper labels; Fig. 4C places Ocum1_r1 in YP cluster 1 and Ocum1_r2 in YP cluster 3
+paper_label <- function(d, samples) {
+  lab <- switch(d, WP = PAPER_WP, WPq = PAPER_WP, PP = PAPER_PP, YP = PAPER_YP)[line_of(samples)]
+  if (d == "YP") lab[samples == "Ocum1_r1"] <- 1
+  unname(lab)
+}
 
 read_mat <- function(file, idcol = "id") {
   d <- fread(file.path(PROC, file), sep = "\t", data.table = FALSE, check.names = FALSE)

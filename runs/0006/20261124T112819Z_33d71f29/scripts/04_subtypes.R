@@ -44,7 +44,7 @@ for (i in seq_len(nrow(sel))) {
   o <- load_fit(d, fr, k); fit <- o$fit
   cl <- predict(fit, what = "consensus"); sil <- silhouette(fit, what = "consensus")
   smp <- names(cl)
-  pl <- paper_lab[[d]][line_of(smp)]
+  pl <- paper_label(d, smp)
   tab <- table(reproduced = cl, paper = pl)
   comp[[d]] <- data.frame(dataset = d, frac = fr, k = k, n_features = length(o$features),
                           ARI_vs_paper = ari(cl, pl), cophenetic = cophcor(fit),
