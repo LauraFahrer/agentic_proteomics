@@ -1,0 +1,11 @@
+{
+ "S3_WP_proteins":5675.0,
+ "S3_WP_nonhuman_rows_removed":2.0,
+ "S3_PP_sites":8445.0,
+ "S3_PP_duplicated_site_ids_dropped":7.0,
+ "S3_YP_sites":4780.0,
+ "quantms_proteins_any_sample_1pctFDR":8255.0,
+ "quantms_proteins_ge50pct_samples":6092.0,
+ "quantms_ids_per_sample_median":6175.0,
+ "quantms_missing_fraction_after_filter":0.0839273989
+}

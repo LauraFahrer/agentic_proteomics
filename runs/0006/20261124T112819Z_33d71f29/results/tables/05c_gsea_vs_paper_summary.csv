@@ -1,0 +1,13 @@
+dataset,paper_group,permutation,n_paper,n_this_run_FDR25,n_overlap,n_paper_with_positive_NES,median_rank_of_paper_sets,n_sets_tested
+WP,Cell prolif/EMT,phenotype,27,0,0,17,14,24
+WP,Cell prolif/EMT,gene_set,27,9,7,17,13,24
+WP,EMT,phenotype,18,0,0,6,4.5,16
+WP,EMT,gene_set,18,3,3,6,3.5,16
+WP,Metabolism,phenotype,11,4,4,11,7,26
+WP,Metabolism,gene_set,11,20,10,11,6,26
+PP,PP2 (Metabolism),phenotype,11,3,1,10,7.5,42
+PP,PP2 (Metabolism),gene_set,11,5,5,10,7.5,42
+YP,YP3,phenotype,10,2,0,10,22,59
+YP,YP3,gene_set,10,5,2,10,15,59
+YP,YP1,phenotype,1,0,0,0,,22
+YP,YP1,gene_set,1,1,0,0,,22

@@ -1,0 +1,6 @@
+numpy @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_numpy_he827f4e_1794816433/work/dist/numpy-2.5.5-cp312-cp312-linux_x86_64.whl#sha256=7c54d8ad1ea4be121b84a41477d7fe4d432572e06565c17ee8ad491171eb61a0
+openpyxl @ file:///home/conda/feedstock_root/build_artifacts/openpyxl_1794943777095/work
+pandas @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pandas_h91ec553_1793811635/work
+pyarrow==21.0.0
+scipy @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_scipy-split_1795136062/work/dist/scipy-1.18.1-cp312-cp312-linux_x86_64.whl#sha256=c28cccd2e024307ea3868ca8a9bdf82d648ea83f6b5e81ede43ef8cca26ac7ee
+xlrd @ file:///home/conda/feedstock_root/build_artifacts/xlrd_1756170038895/work

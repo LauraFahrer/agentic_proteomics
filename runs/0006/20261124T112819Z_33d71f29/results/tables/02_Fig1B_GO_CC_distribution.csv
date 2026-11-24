@@ -1,0 +1,15 @@
+term,GO,proteins_direct,pproteins_direct,paper_proteins,paper_pproteins
+Centrosome,GO:0005813,228,214,172,231
+Cytoskeleton,GO:0005856,357,347,434,512
+Cytosol,GO:0005829,2508,1806,1786,1768
+Endoplasmic reticulum,GO:0005783,559,255,751,15
+Extracellular exosome,GO:0070062,1213,679,1523,1172
+Extracellular matrix,GO:0031012,119,34,129,100
+Golgi apparatus,GO:0005794,419,280,581,350
+Lysosome,GO:0005764,152,84,229,80
+Membrane,GO:0016020,1632,1137,1785,1627
+Mitochondrion,GO:0005739,892,298,757,476
+Nucleolus,GO:0005730,481,344,493,464
+Nucleus,GO:0005634,2368,1905,2307,2206
+Peroxisome,GO:0005777,62,23,88,64
+Ribosome,GO:0005840,132,70,138,99

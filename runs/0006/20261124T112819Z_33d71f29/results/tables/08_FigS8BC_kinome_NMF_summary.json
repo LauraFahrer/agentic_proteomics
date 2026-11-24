@@ -1,0 +1,7 @@
+{
+  "n_kinases": 179,
+  "cophenetic": 0.9122,
+  "mean_silhouette": 0.7335,
+  "ARI_vs_integrative": 0.8141,
+  "contingency": ["   ", "    EMT Metabolism", "  1  19          0", "  2   2         21"]
+}
