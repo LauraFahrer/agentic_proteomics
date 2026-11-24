@@ -46,7 +46,8 @@ share <- function(m, genes, keyfun) {
   inten <- rowSums(2^m); k <- keyfun(genes)
   s <- tapply(inten, k, sum); round(100 * s / sum(s), 2)
 }
-fA_wp <- share(WP[kW, ], gW[kW], grp_of); fA_pp <- share(PP[kP, ], gP[kP], grp_of); fB_yp <- share(YP[kY, ], gY[kY], tkf_of)
+fA_wp <- share(WP[kW, ], gW[kW], grp_of); fA_pp <- share(PP[kP, ], gP[kP], grp_of); kYt <- kY & grp_of(gY) == "TK"   # Fig. 6B shows tyrosine-kinase families only
+fB_yp <- share(YP[kYt, ], gY[kYt], tkf_of)
 paperA_wp <- c(Other = 33.02, Atypical = 22.01, STE = 4.36, TK = 4.03, AGC = 0.48, CAMK = 0.04, CK1 = 1.4e-05, TKL = 0.07, CMGC = 36.05)
 paperA_pp <- c(CMGC = 20, Other = 8, Atypical = 23, STE = 11, TK = 6, AGC = 6, CAMK = 20, TKL = 2, CK1 = 3)
 paperB_yp <- c(FGFR = 32.97, EPH = 32.89, SRC = 14.67, EGFR = 8.79, JAK = 3.83, MET = 3.37, INSR = 1.18, DDR = 0.77, ABL = 0.67, AXL = 0.3, Other = 0.54)
@@ -86,9 +87,11 @@ named <- data.table(feature_pattern = c("^ERBB2$", "^CDK12$", "^ERBB2_", "^CDK12
                     paper_line = c("N87", "N87", "N87", "N87", "KatoIII", "KatoIII", "MKN28", "MKN28"))
 rec <- rbindlist(lapply(seq_len(nrow(named)), function(i) {
   x <- O[dataset == named$dataset[i] & grepl(named$feature_pattern[i], feature)]
-  x[, .(dataset = named$dataset[i], pattern = named$feature_pattern[i], paper_line = named$paper_line[i], def,
+  if (!nrow(x)) return(data.table(dataset = named$dataset[i], pattern = named$feature_pattern[i], paper_line = named$paper_line[i],
+                                  def = NA, n_features = 0L, features_outlier_in_paper_line = 0L, lines_flagged = ""))
+  x[, .(dataset = named$dataset[i], pattern = named$feature_pattern[i], paper_line = named$paper_line[i],
         n_features = .N, features_outlier_in_paper_line = sum(grepl(named$paper_line[i], lines)),
-        lines_flagged = paste(unique(unlist(strsplit(lines, ";"))), collapse = ";"))], by = def][, -1]
+        lines_flagged = paste(unique(unlist(strsplit(lines, ";"))), collapse = ";")), by = def]
 }), fill = TRUE)
 fwrite(rec, file.path(TAB, "08_FigS6_named_outliers_recovery.csv")); print(rec)
 # per-line view of the named features (line means, z-scores)

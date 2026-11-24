@@ -6,16 +6,23 @@
 #      Phosphosite -> gene collapse by GSEA's own Max_probe mode (CHIP file).
 #  (b) WGCNA co-expression modules (WP, PP), module-cluster correlation, GO BP enrichment
 #  (c) one-way ANOVA (WP, YP clusters) / limma (PP clusters) + GO BP over-representation
-#      (geneontology.org/PANTHER unreachable -> clusterProfiler::enricher on MSigDB v7.0 c5.bp)
+#      (geneontology.org/PANTHER unreachable; clusterProfiler needs a bioconductor.org data package ->
+#       hypergeometric ORA with fgsea::fora on MSigDB v7.0 c5.bp, BH-adjusted)
 #  (d) integrative EMT vs Metabolism limma (|log2FC|>1, adj.P<0.05) on WP and PP (Fig. 5B)
 source(file.path(dirname(sub("--file=", "", grep("--file=", commandArgs(FALSE), value = TRUE)[1])), "common.R"))
-suppressPackageStartupMessages({ library(limma); library(clusterProfiler); library(WGCNA); library(pheatmap) })
+suppressPackageStartupMessages({ library(limma); library(fgsea); library(WGCNA); library(pheatmap) })
 allowWGCNAThreads(as.integer(Sys.getenv("NCORES", "4")))
 MS <- file.path(SRC, "ssGSEA2.0/db/msigdb")
 GMT <- list(H = file.path(MS, "h.all.v7.0.symbols.gmt"), KEGG = file.path(MS, "c2.cp.kegg.v7.0.symbols.gmt"),
             BP = file.path(MS, "c5.bp.v7.0.symbols.gmt"))
-read_gmt2 <- function(f) { x <- clusterProfiler::read.gmt(f); colnames(x) <- c("term", "gene"); x }
-T2G <- lapply(GMT, read_gmt2)
+T2G <- lapply(GMT, gmtPathways)
+# over-representation (hypergeometric, BH) - returns columns ID, GeneRatio, p.adjust like clusterProfiler
+enricher <- function(genes, universe, TERM2GENE, pvalueCutoff = 0.05, qvalueCutoff = 1) {
+  r <- fora(TERM2GENE, genes = unique(genes), universe = unique(universe), minSize = 10, maxSize = 500)
+  out <- data.table(ID = r$pathway, GeneRatio = paste0(r$overlap, "/", length(intersect(genes, universe))),
+                    BgRatio = r$size, pvalue = r$pval, p.adjust = r$padj)
+  list(result = out[order(pvalue)])
+}
 GD <- file.path(DC, "gsea"); dir.create(GD, showWarnings = FALSE)
 GSEA_BIN <- Sys.getenv("GSEA_BIN", "/opt/mm/envs/repro/bin/gsea-cli.sh")
 if (!file.exists(GSEA_BIN)) GSEA_BIN <- file.path(dirname(Sys.which("R")), "../share/gsea-4.3.2-0/gsea-cli.sh")
@@ -95,7 +102,7 @@ wgcna_run <- function(m, name, clus) {
   uni <- unique(gene_of[[name]])
   enr <- rbindlist(lapply(setdiff(unique(mods), "grey"), function(mc) {
     g <- unique(gene_of[[name]][names(mods)[mods == mc]])
-    e <- tryCatch(as.data.table(enricher(g, universe = uni, TERM2GENE = T2G$BP, pvalueCutoff = 0.05, qvalueCutoff = 1)@result),
+    e <- tryCatch(as.data.table(enricher(g, universe = uni, TERM2GENE = T2G$BP)$result),
                   error = function(err) NULL)
     if (is.null(e) || !nrow(e)) return(NULL)
     e <- e[p.adjust < 0.05][order(p.adjust)][seq_len(min(.N, 5))]
@@ -130,7 +137,7 @@ go_by_cluster <- function(m, cl, name, sig) {
   top <- colnames(means)[apply(means, 1, which.max)]
   rbindlist(lapply(sort(unique(cl)), function(c) {
     g <- unique(gene_of[[name]][sig[top == c]])
-    e <- tryCatch(as.data.table(enricher(g, universe = uni, TERM2GENE = T2G$BP, pvalueCutoff = 0.05, qvalueCutoff = 1)@result),
+    e <- tryCatch(as.data.table(enricher(g, universe = uni, TERM2GENE = T2G$BP)$result),
                   error = function(err) NULL)
     if (is.null(e) || !nrow(e)) return(NULL)
     e <- e[p.adjust < 0.05]; if (!nrow(e)) return(NULL)
@@ -187,7 +194,7 @@ ora <- rbindlist(lapply(c("EMT", "Metabolism"), function(grp) {
   s <- I[sig == TRUE & dataset %in% c("WP", "PP") & sign(log2FC_EMT_vs_Met) == ifelse(grp == "EMT", 1, -1)]
   g <- unique(s$gene); uni <- unique(I[dataset %in% c("WP", "PP")]$gene)
   rbindlist(lapply(c("KEGG", "H"), function(db) {
-    e <- tryCatch(as.data.table(enricher(g, universe = uni, TERM2GENE = T2G[[db]], pvalueCutoff = 1, qvalueCutoff = 1)@result), error = function(err) NULL)
+    e <- tryCatch(as.data.table(enricher(g, universe = uni, TERM2GENE = T2G[[db]])$result), error = function(err) NULL)
     if (is.null(e)) return(NULL); e$group <- grp; e$db <- db; e$n_genes_input <- length(g); e[p.adjust < 0.25]
   }), fill = TRUE)
 }), fill = TRUE)

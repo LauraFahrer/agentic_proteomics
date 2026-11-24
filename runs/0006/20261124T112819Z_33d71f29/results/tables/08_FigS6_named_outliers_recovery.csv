@@ -1,0 +1,14 @@
+def,dataset,pattern,paper_line,n_features,features_outlier_in_paper_line,lines_flagged
+A_top5pct_level,WP,^ERBB2$,N87,1,1,N87
+B_top5pct_zscore,WP,^ERBB2$,N87,1,1,N87
+B_top5pct_zscore,WP,^CDK12$,N87,1,1,N87
+A_top5pct_level,PP,^ERBB2_,N87,3,3,N87
+B_top5pct_zscore,PP,^ERBB2_,N87,10,10,eAGS;KatoIII;N87;YCCEL1;SNU719;NCC24
+A_top5pct_level,PP,^CDK12_,N87,14,13,AGS;AZ521;eAGS;KatoIII;N87;NCC24;Ocum1;SNU1750;SNU601;TMK1;YCC3;YCCEL1;MKN28;SNU719
+B_top5pct_zscore,PP,^CDK12_,N87,16,12,AZ521;SNU1750;TMK1;YCCEL1;eAGS;N87;NCC24;SNU719
+A_top5pct_level,PP,^FGFR2_,KatoIII,1,1,KatoIII
+B_top5pct_zscore,PP,^FGFR2_,KatoIII,6,6,KatoIII
+A_top5pct_level,YP,^FGFR2_,KatoIII,3,3,KatoIII
+B_top5pct_zscore,YP,^FGFR2_,KatoIII,4,4,KatoIII
+B_top5pct_zscore,PP,^CSNK1D_S384,MKN28,1,1,MKN28;N87;NCC24
+B_top5pct_zscore,PP,^CSNK1E_S389,MKN28,1,1,AZ521;MKN28

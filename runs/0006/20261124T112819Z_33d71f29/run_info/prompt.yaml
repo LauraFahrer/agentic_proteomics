@@ -1,0 +1,30 @@
+prompt_id: 0006
+version: 1
+
+role:
+  You are an autonomous scientific research agent specialized in proteomics, gastric cancer biology, bioinformatics and data analysis.
+  Your goal is to independently reproduce the specified parts of the published proteomic study by reconstructing and executing its experimental data analysis workflow as closely as possible to the original publication.
+
+objective:
+  Independently reproduce the proteomic analysis workflow in the scientific publication associated with the public dataset PXD048538, version e60b9e9aa4c8 by using the same data, tools, software, databases, parameters and statistical methods wherever possible.
+  Evaluate whether the resulting findings, statistical results and biological conclusions agree with those reported in the original publication.
+
+data:
+  Dataset URL: https://portal.quantms.org/collections/celllines/PXD048538/e60b9e9aa4c8
+  Associated scientifc publication: https://febs.onlinelibrary.wiley.com/doi/10.1002/1878-0261.13654
+
+tasks:
+  - Thoroughly review the original scientific publication, including the steps for data processing, subtype classification, functional analysis and kinase activity analysis. Do not include the machine leaarning model prediction.
+  - Reconstruct the complete analytical workflow described in the publication, identifying all relevant preprocessing steps, analytical methods, tools, software versions, databases and parameter settings wherever possible.
+  - Prioritize the original implementations. If tools, applications or databases used in the scientific publication cannot be publicly accessed, implement your own application or use alternative approaches. Clearly state your selection.
+  - Perform the analysis with the reproduced workflow and recreate the relevant figures and tables from the original publication.
+  - Compare the reproduced results with the ones reported in the publication and investigate potential causes of discrepancies.
+
+constrains:
+  - Prioritize faithful reproduction of the original workflow over methodological improvements or alternative approaches.
+  - Do not force agreement with the published results. Report discrepancies and limitations transparently.
+  - Do not silently replace original tools, methods or parameters with alternative implementations, but clearly distinguish exact reproduction from approximate reproduction and independent methodological implementation.
+  - State explicitly when the available evidence is insufficient to establish successful reproduction.
+
+output:
+  - Create a comprehensive scientific report and output all relevant figures, tables and other results.

@@ -1,0 +1,21 @@
+{
+  "run_id": "20261124T112819Z_33d71f29",
+  "status": "partially executed (INKA, PhosMap kinase activity and PTM-SEA not run - see REPORT.md section 7)",
+  "prompt_id": "0006",
+  "type": "reproduction of a published analysis workflow",
+  "dataset_id": "PXD048538",
+  "dataset_version": "e60b9e9aa4c8",
+  "publication": "Hu C et al. Mol Oncol 2024;18(6):1437-1459. doi:10.1002/1878-0261.13654 (PMC11161736)",
+  "scope": "data processing, subtype classification, functional annotation, kinase activity analysis (machine-learning model and public-database mining excluded)",
+  "data_sources": {
+    "primary_downstream_input": "author-processed WP/PP/YP matrices, Table S3 (MOL2-18-1437-s005.xls)",
+    "independent_reprocessing": "quantms e60b9e9aa4c8 (DIA-NN 2.5.1, MaxLFQ; WP only)"
+  },
+  "software": {
+    "R": "4.3 (conda-forge), NMF 0.21.0, ConsensusClusterPlus 1.66.0, WGCNA 1.73, limma 3.58.1, fgsea 1.28.0",
+    "GSEA": "4.3.2 (bioconda; paper used 4.0.3)",
+    "gene_sets": "MSigDB v7.0 (as bundled in broadinstitute/ssGSEA2.0)",
+    "github_tools_cloned_not_executed": "see run_info/github_tool_commits.txt"
+  },
+  "agent": "Claude Code (autonomous research run)"
+}

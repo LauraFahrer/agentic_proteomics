@@ -1,0 +1,12 @@
+{
+  "WP": {
+    "power": 7,
+    "n_modules": 32,
+    "paper_n_modules": 12
+  },
+  "PP": {
+    "power": 4,
+    "n_modules": 44,
+    "paper_n_modules": 5
+  }
+}
