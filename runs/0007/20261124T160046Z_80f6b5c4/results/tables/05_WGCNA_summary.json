@@ -1,0 +1,14 @@
+{
+ "WP": {
+  "power": 7,
+  "n_modules": 25,
+  "n_unassigned": 3582,
+  "paper_n_modules": 12
+ },
+ "PP": {
+  "power": 4,
+  "n_modules": 27,
+  "n_unassigned": 2805,
+  "paper_n_modules": 5
+ }
+}

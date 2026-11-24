@@ -1,0 +1,13 @@
+dataset,paper_cluster,permutation,n_paper,n_this_run_FDR25,n_overlap,n_paper_with_positive_NES,median_rank_of_paper_sets,n_sets_tested
+PP,2,phenotype,11,0,0,10,10.0,46
+PP,2,gene_set,11,2,2,10,7.5,46
+WP,1,phenotype,27,0,0,17,18.0,47
+WP,1,gene_set,27,13,9,17,19.0,47
+WP,2,phenotype,18,0,0,6,24.0,47
+WP,2,gene_set,18,3,3,6,23.0,47
+WP,3,phenotype,11,4,4,11,6.0,47
+WP,3,gene_set,11,20,10,11,6.0,47
+YP,1,phenotype,1,0,0,0,,70
+YP,1,gene_set,1,1,0,0,,70
+YP,3,phenotype,10,1,0,10,21.5,70
+YP,3,gene_set,10,5,2,10,15.5,70

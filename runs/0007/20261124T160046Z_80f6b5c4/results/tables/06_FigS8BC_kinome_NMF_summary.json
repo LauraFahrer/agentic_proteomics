@@ -1,0 +1,9 @@
+{
+ "n_kinases": 179,
+ "cophenetic": 0.9048540144965175,
+ "mean_silhouette": 0.7413651107424337,
+ "ARI_vs_integrative": 0.9047106173119438,
+ "misassigned": [
+  "MKN28_r3"
+ ]
+}
