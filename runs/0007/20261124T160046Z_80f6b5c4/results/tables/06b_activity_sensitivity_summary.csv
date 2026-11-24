@@ -1,0 +1,5 @@
+setting,n_assigned_EMT,n_assigned_Met,paper_EMT_recovered,paper_Met_recovered,paper_kinases_opposite,recovered
+exact|centred,13,12,0,0,1,
+exact|uncentred,13,12,0,0,1,
+substring|centred,24,19,2,0,1,CLK2;MAPK1
+substring|uncentred,13,15,0,0,1,
