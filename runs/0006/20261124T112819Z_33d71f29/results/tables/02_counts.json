@@ -1,0 +1,17 @@
+{
+  "WP_proteins_S3": 5675,
+  "WP_proteins_paper": 6091,
+  "PP_sites_S3": 8445,
+  "PP_residue_S3": {
+    "S": 7399,
+    "T": 887,
+    "Y": 159
+  },
+  "PP_unique_phosphopeptides_paper": 16685,
+  "YP_sites_S3": 4780,
+  "YP_residue_S3": {
+    "Y": 4780
+  },
+  "YP_pTyr_sites_paper": 8705,
+  "WP_proteins_quantms_processed": 6092
+}
