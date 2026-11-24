@@ -111,7 +111,9 @@ of Fig. S2A/S4A/E, silhouettes, or interpretability). This is a reproducibility 
 the clustering itself.
 
 The Methods say "mean absolute deviation", but the Fig. S2 legend says "median absolute deviation". A median-AD
-grid for WP was run as a sensitivity check (`tables/04_nmf_grid_median_ad.csv`; see FIGURES_AND_TABLES.md).
+grid for WP was run as a sensitivity check (`tables/04_nmf_grid_median_ad.csv`). At 10 % / k = 3 it gives the
+**same three WP clusters** as the paper, so the subtyping is insensitive to this ambiguity. Its cophenetic optimum
+is again elsewhere (10 %, k = 2; 0.973 vs 0.963), so it does not explain the parameter choice either.
 
 ### 3.3 Integrative clustering (`tables/03_integrative_clusters.csv`, `figures/04_Fig5A_*`)
 
