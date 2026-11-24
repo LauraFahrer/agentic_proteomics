@@ -1,0 +1,6 @@
+{
+ "top40_overlap": 37,
+ "testable": 37,
+ "all_testable_in_top40": true,
+ "ARI_hclust40_vs_integrative": 1.0
+}

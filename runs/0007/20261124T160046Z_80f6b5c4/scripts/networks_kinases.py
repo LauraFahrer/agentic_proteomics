@@ -225,9 +225,10 @@ def inka_scores(intens, site_gene, site_acc_pos, kinases, act_loop, psp, nwk):
             comp["actloop"].loc[k] = intens[loop].sum(axis=0)
     for name, tab in [("psp", psp), ("nwk", nwk)]:
         t = tab[tab["site_key"].isin(keys) & tab["kinase"].isin(kin)]
-        loc = keys.get_indexer(t["site_key"])
-        for k, g in pd.DataFrame({"k": t["kinase"].values, "i": loc}).groupby("k"):
-            comp[name].loc[k] = intens[np.unique(g["i"].values)].sum(axis=0)
+        pos = pd.Series(np.arange(len(keys))).groupby(np.asarray(keys)).apply(list).to_dict()  # key -> all rows
+        for k, g in t.groupby("kinase"):
+            ii = np.unique([i for sk in g["site_key"] for i in pos[sk]])
+            comp[name].loc[k] = intens[ii].sum(axis=0)
     kc = comp["kinome"] + comp["actloop"]; sc = comp["psp"] + comp["nwk"]
     comp["kinase_centric"] = kc; comp["substrate_centric"] = sc
     comp["inka"] = np.sqrt(kc * sc)

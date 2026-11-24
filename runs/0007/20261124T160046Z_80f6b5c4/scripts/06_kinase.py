@@ -128,7 +128,7 @@ if step in ("all", "kinome"):
     kres = pd.DataFrame(dict(sample=km.columns, kinome_cluster=cl, silhouette=sil, integrative=integ))
     kres.to_csv(os.path.join(TAB, "06_FigS8BC_kinome_NMF.csv"), index=False)
     ks = dict(n_kinases=len(km), cophenetic=M.cophenetic_coef(C), mean_silhouette=float(sil.mean()), ARI_vs_integrative=ari(cl, integ),
-              misassigned=list(kres.sample[kres.kinome_cluster != kres.groupby("integrative").kinome_cluster.transform(lambda x: x.mode()[0])]))
+              misassigned=list(kres["sample"][kres.kinome_cluster != kres.groupby("integrative").kinome_cluster.transform(lambda x: x.mode()[0])]))
     json.dump(ks, open(os.path.join(TAB, "06_FigS8BC_kinome_NMF_summary.json"), "w"), indent=1, default=float); print(ks)
     # 40 kinases (Fig. 8B)
     e = is_emt(km.columns).astype(float)
@@ -293,7 +293,12 @@ if step in ("all", "ptmsea"):
     X = X.groupby(ids).mean()
     print("PP sites with windows:", ok.sum(), "unique windows:", len(X))
     sig = M.read_gmt(os.path.join(DB, "ptm.sig.db.all.flanking.human.v1.9.1.gmt"))
-    names, ES, NES, Pp = M.ssgsea_scores(X.values, list(X.index), sig, weight=0.75, nperm=1000, min_overlap=10, seed=1)
+    from multiprocessing import Pool
+    chunks = np.array_split(np.arange(X.shape[1]), 3)
+    with Pool(3) as pool:   # samples are scored independently; one seed per chunk
+        parts = pool.starmap(M.ssgsea_scores, [(X.values[:, c], list(X.index), sig, 0.75, 1000, 10, 1 + i) for i, c in enumerate(chunks)])
+    names = parts[0][0]
+    ES = np.hstack([p_[1] for p_ in parts]); NES = np.hstack([p_[2] for p_ in parts]); Pp = np.hstack([p_[3] for p_ in parts])
     N = pd.DataFrame(NES, index=names, columns=X.columns); N.to_csv(os.path.join(TAB, "06_PTMSEA_NES.csv"))
     pd.DataFrame(Pp, index=names, columns=X.columns).to_csv(os.path.join(TAB, "06_PTMSEA_P.csv"))
     e = is_emt(N.columns).astype(float)

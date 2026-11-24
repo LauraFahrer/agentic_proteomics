@@ -359,13 +359,15 @@ def ssgsea_scores(X, ids, signatures, weight=0.75, nperm=1000, min_overlap=10, s
         rk = np.zeros(G); rk[ok] = stats.rankdata(v[ok])  # sample normalisation: rank (NaN -> bottom)
         o = np.argsort(-rk, kind="stable"); vals = rk[o]
         pos = np.empty(G, int); pos[o] = np.arange(G)
+        kmax = max(len(u) + len(d) for u, d in sets.values())
+        permall = np.argsort(rng.random((nperm, G)), axis=1)[:, :kmax]
         for i, n in enumerate(names):
             up, dn = sets[n]
             mu = np.zeros(G, bool); mu[pos[up]] = True
             md = np.zeros(G, bool); md[pos[dn]] = True
             e = es_area(vals, mu) - es_area(vals, md)
             k = len(up) + len(dn)
-            perm = np.argsort(rng.random((nperm, G)), axis=1)[:, :k]
+            perm = permall[:, :k]   # one random ordering per sample, prefixes give random sets of size k
             a = np.zeros((nperm, G), bool); b = np.zeros((nperm, G), bool)
             rows = np.arange(nperm)[:, None]
             if len(up): a[rows, perm[:, :len(up)]] = True

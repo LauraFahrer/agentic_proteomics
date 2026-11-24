@@ -1,0 +1,21 @@
+{
+ "top6_this_run": [
+  "EGFR",
+  "EPHA2",
+  "LYN",
+  "ERBB2",
+  "LCK",
+  "SRC"
+ ],
+ "paper_tier": [
+  "SRC",
+  "ABL1",
+  "EGFR",
+  "EPHA2",
+  "PTK2",
+  "MET"
+ ],
+ "overlap": 3,
+ "SRC_rank_by_frequency": 6,
+ "n_TK_scored": 32
+}
