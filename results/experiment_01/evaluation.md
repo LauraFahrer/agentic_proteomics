@@ -45,7 +45,7 @@
     - differential expression of RTKs (receptor tyrosine kinase) between subtypes (not reported in paper)
 - mapping of known complexes and subtype-specific differences: (OXPHOS/TCA complexes up in Metabolism; transcription/ubiquitin complexes up in EMT)
 
-## Comparison and Evaluation
+## Conclusion
 
 | Step | Paper | Agent |
 | --- | --- | --- |
